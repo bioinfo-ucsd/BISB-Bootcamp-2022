@@ -2,6 +2,9 @@
   {% for seminar in page.seminars %}
   <div class="announcement">
     <h2>{{ seminar.date | date: "%A, %B %d" }}</h2>
+    {% if seminar.flyer %}
+    <p><a href="{{ seminar.flyer }}">Flyer</a></p>
+    {% endif %}
     {% for talk in seminar.talks %}
     <div class="staffer">
       {% if talk.photo %}
@@ -11,6 +14,12 @@
         <p>{{ talk.speaker }}</p>
         <p>{{ talk.speaker_title }}</p>
         <p><b>{{ talk.talk_title }}</b></p>
+        {% if talk.keywords %}
+        <p><b>Research keywords:</b> {{ talk.keywords }} </p>
+        {% endif %}
+        {% if talk.recording %}
+        <p><a href="{{ talk.recording }}">Talk Recording</a></p>
+        {% endif %}
       </div>
     </div>
     {% endfor %}

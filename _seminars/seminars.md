@@ -7,11 +7,14 @@ seminars:
     speaker_title: Professor, Hess Chair in Plant Science, Salk Institute
     talk_title: "\"Decoding Root Growth to Address Climate Change\""
     photo: wolfgang_busch.jpg
+    keywords: Systems Genetics of Root Growth, Plant Based Carbon Sequestration
     recording:
   - speaker: Graham McVicker, PhD
     speaker_title: Assistant Professor, Rentschler Developmental Chair, Salk Institute
     talk_title: "\"Using genome perturbations to decipher genetic variants with associated with immune traits\""
     photo: graham_mcvicker.jpg
+    keywords:
+    recording:
 - date: "2022-06-30"
   flyer:
   talks:
@@ -19,10 +22,14 @@ seminars:
     speaker_title: Assistant Professor of Medicine, UCSD Health Dept of Biomedical Informatics
     talk_title: "\"Biomedical Predictive Modeling on Blockchain\""
     photo: tsung-ting_kuo.jpg
+    keywords:
+    recording:
   - speaker: Qi (Rose) Yu, PhD
     speaker_title: Assistant Professor, UCSD Dept of Computer Science and Engineering
     talk_title: "\"Mean aortic pressure forecasting with deep sequence models\""
     photo: rose_yu.jpg
+    keywords:
+    recording:
 - date: "2022-07-07"
   flyer:
   talks:
@@ -30,10 +37,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: Vineet Bafna, PhD
     speaker_title: Professor, Department of Computer Science & Engineering
     talk_title: "\"Extrachromosomal DNA in cancer\""
     photo: vineet_bafna.jpg
+    keywords:
+    recording:
 - date: "2022-07-14"
   flyer:
   talks:
@@ -41,10 +52,14 @@ seminars:
     speaker_title: Assistant Professor, UCSD Division of Biomedical Informatics, Department of Medicine
     talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
     photo: kit_curtius.jpg
+    keywords:
+    recording:
   - speaker: Jill Mesirov, PhD
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
 - date: "2022-07-21"
   flyer:
   talks:
@@ -52,10 +67,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: Rob Knight, PhD
     speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
     talk_title: "\"Microbiome research in the Knight Lab and at the Center for Microbiome Innovation\""
     photo: rob_knight.jpg
+    keywords:
+    recording:
 - date: "2022-07-28"
   flyer:
   talks:
@@ -63,10 +82,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: Ron Evans, PhD
     speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
     talk_title: 
     photo: ron_evans.jpg
+    keywords:
+    recording:
 - date: "2022-08-04"
   flyer:
   talks:
@@ -74,10 +97,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: Chris Benner, PhD
     speaker_title: Assistant Professor, Deptartment of Medicine
     talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
     photo: chris_benner.jpg
+    keywords:
+    recording:
 - date: "2022-08-11"
   flyer:
   talks:
@@ -85,10 +112,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: 
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
 - date: "2022-08-18"
   flyer:
   talks:
@@ -96,10 +127,16 @@ seminars:
     speaker_title: Associate Professor of Cognitive Science
     talk_title: "\"Neuronal epigenomes and cognitive diversity\""
     photo: eran_mukamel.jpg
+    keywords:
+    recording:
+    keywords:
+    recording:
   - speaker: Bing Ren, PhD
     speaker_title: Professor, Department of Cellular and Molecular Medicine
     talk_title: "\"Single cell epigenome analysis in health and disease\""
     photo: bing_ren.jpg
+    keywords:
+    recording:
 - date: "2022-08-25"
   flyer:
   talks:
@@ -107,10 +144,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: 
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
 - date: "2022-09-01"
   flyer:
   talks:
@@ -118,10 +159,14 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: 
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
 - date: "2022-09-08"
   flyer:
   talks:
@@ -129,8 +174,12 @@ seminars:
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
   - speaker: 
     speaker_title: 
     talk_title: 
     photo: 
+    keywords:
+    recording:
 ---
