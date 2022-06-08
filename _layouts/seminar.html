@@ -1,7 +1,7 @@
 <div>
   {% for seminar in page.seminars %}
   <div class="announcement">
-    <h2>{{ seminar.date | date: "%A, %B %d" }}</h2>
+    <h2><a id="{{ seminar.date}}"></a>{{ seminar.date | date: "%A, %B %d" }}</h2>
     {% if seminar.flyer %}
     <p><a href="{{ seminar.flyer }}">Flyer</a></p>
     {% endif %}
@@ -15,7 +15,10 @@
         <p>{{ talk.speaker_title }}</p>
         <p><b>{{ talk.talk_title }}</b></p>
         {% if talk.keywords %}
-        <p><b>Research keywords:</b> {{ talk.keywords }} </p>
+        <p>Research terms: {{ talk.keywords }} </p>
+        {% endif %}
+        {% if talk.website %}
+        <p><a href="{{ talk.website }}">{{ talk.website }}</a></p>
         {% endif %}
         {% if talk.recording %}
         <p><a href="{{ talk.recording }}">Talk Recording</a></p>
