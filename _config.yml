@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: BISB Bootcamp
-description: Bootcamp website for the 2022 incoming cohort of the UC San Diego Bioinformatics & Systems Biology (BISB) Ph.D. program
+description: Website for the 2022 incoming cohort Bootcamp of the UC San Diego Bioinformatics & Systems Biology (BISB) PhD program
 author: Mike Cuoco
 url: 'https://bioinfo-ucsd.github.io'
 baseurl: '/BISB-Bootcamp-2022' 
