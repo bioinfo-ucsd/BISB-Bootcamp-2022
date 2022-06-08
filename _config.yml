@@ -17,7 +17,8 @@ title: BISB Bootcamp
 tagline: A Jekyll template for course websites
 description: Bootcamp website for the 2022 incoming cohort of the UC San Diego Bioinformatics & Systems Biology (BISB) Ph.D. program
 author: Mike Cuoco
-baseurl: '/BISB-Bootcamp-2022' # the subpath of your site, e.g. /blog
+url: 'https://bioinfo-ucsd.github.io'
+baseurl: '/BISB-Bootcamp-2022' 
 exclude: ["Gemfile", "Gemfile.lock"]
 
 # Theme settings
@@ -27,6 +28,8 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
+  BISB Bootcamp 2022 on GitHub:
+    - 'https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022'
 footer_content:
 
 # Collections for website data
