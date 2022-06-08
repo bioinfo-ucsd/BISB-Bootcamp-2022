@@ -23,7 +23,7 @@ You can find the Schedule of Classes, along with other important services, on th
 
 You may enroll in courses online using WebReg, which can also be found on My TritonLink Tools. You can find enrollment dates, and many other important dates and deadlines, on the [UCSD Enrollment & Registration Calendar](https://students.ucsd.edu/academics/enroll/calendar22-23.html). We highly recommended you bookmark this page to stay up-to-date on important deadlines.
 
-**NOTE:** Registration can always be changed later. As such, it is not *urgently* required that you enroll in classes. That being said, Compute Science and Engineering (CSE) courses tend to fill up quickly, so we suggest starting to explore these. If a CSE course of interest is full, many students have found success in emailing the professor and explaining their interest. In addition, many courses – particularly MED BMI courses – are not listed on WebReg until closer to the start of the Fall quarter. More advice on courses will be relayed during Bootcamp.
+**NOTE:** Registration can always be changed later. As such, it is not *urgently* required that you enroll in classes. That being said, Computer Science and Engineering (CSE) courses tend to fill up quickly, so we suggest starting to explore these. If a CSE course of interest is full, many students have found success in emailing the professor and explaining their interest. In addition, many courses – particularly MED BMI courses – are not listed on WebReg until closer to the start of the Fall quarter. More advice on courses will be relayed during Bootcamp.
 
 Course requirements can be found on the BISB [website](https://bioinformatics.ucsd.edu/node/104).
 
