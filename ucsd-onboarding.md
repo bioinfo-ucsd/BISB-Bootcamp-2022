@@ -7,13 +7,15 @@ nav_order: 3
 
 # UC San Diego Onboarding
 
-## Setup your UCSD email
+## Setup your UCSD Student account
 
-You may have already received information on how to set up and log into your UCSD email account. This information would have been sent via email to the email address you listed on your graduate application.
+You may have already received information on how to set up and log into your UCSD student account. This information has been sent to the email address you listed on your graduate application.
 
-Set up instructions can be found at this [link](https://support.ucsd.edu/its?id=kb_article_view&sysparm_article=KB0033344&sys_kb_id=895a32351b9e4d50506f64e8624bcb02).
+See instructions to [Activate and Access your New Student Account](https://support.ucsd.edu/its?id=kb_article_view&sysparm_article=KB0033344&sys_kb_id=895a32351b9e4d50506f64e8624bcb02) from UCSD IT Support. After completion, you should have a PID (Personal IDentification number) in the format A12345678, a @ucsd email address, and functioning DUO two-step login.
 
 Emails from Bootcamp Instructors, as well as future emails from BISB will be sent to your @ucsd email.
+
+See the [Computer Accounts and Resources](https://bioinformatics.ucsd.edu/node/31) on the BISB program website for additional information including setting up your UCSD Zoom account and campus network access.
 
 ## Enroll in Fall courses
 
