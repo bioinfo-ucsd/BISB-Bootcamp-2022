@@ -28,9 +28,11 @@ schedule:
       - name: Opening Remarks from Program Directors
         start: "9:00 AM"
         end: "9:30 AM"
+        instructors: ["Terry Gaasterland, *BISB Chair*", "Lucila Ohno-Machado, *BMI Chair*"]
       - name: Graduate Program Overview
         start: "9:30 AM"
         end: "11:00 AM"
+        instructors: "Fran Perez Estrada, *BISB Program Coordinator*"
   - name: Tuesday 9/13
     events:
       - name: Breakfast
