@@ -1,5 +1,6 @@
 .module {
   @extend %card;
+  background-color: white;
 
   h1, h2 {
     @extend .text-gamma;
@@ -8,4 +9,21 @@
   .module-meta {
     @extend .text-epsilon;
   }
+
+  &.break {
+    background-color: lightgrey;
+  }
+  
+  &.bio {
+    background-color: lightgreen;
+  }
+  
+  &.cs {
+    background-color: lightblue;
+  }
+  
+  &.social {
+    background-color: thistle;
+  }
+
 }
