@@ -7,7 +7,7 @@ nav_order: 2
 
 # Summer Faculty Talk Series
 
-This seminar series is intended to be a forum for BISB and DBMI faculty to share their research and for incoming students to learn about the research opportunities available.
+This seminar series is intended to be a forum for BISB and BMI faculty to share their research and for incoming students to learn about the research opportunities available.
 
 Each session will host two faculty members, where they will present their research in 20-25 minute and answer 5-10 minutes of guided Q&A. The BISB graduate program coordinator will notify the BISB Program mailing list in the days ahead of each seminar, including information about the presenters and a password-protected link to the Zoom meeting.
 
