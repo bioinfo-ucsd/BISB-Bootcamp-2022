@@ -20,7 +20,7 @@ timeline:
   - '5:00 PM'
   - '5:30 PM'
 schedule:
-  - name: Monday
+  - name: Monday 9/12
     events:
       - name: Breakfast
         start: '8:30 AM'
@@ -31,22 +31,22 @@ schedule:
       - name: Graduate Program Overview
         start: "9:30 AM"
         end: "11:00 AM"
-  - name: Tuesday
+  - name: Tuesday 9/13
     events:
       - name: Breakfast
         start: '8:30 AM'
         end: '9:00 AM'
-  - name: Wednesday
+  - name: Wednesday 9/14
     events:
       - name: Breakfast
         start: '8:30 AM'
         end: '9:00 AM'
-  - name: Thursday
+  - name: Thursday 9/15
     events:
       - name: Breakfast
         start: '8:30 AM'
         end: '9:00 AM'
-  - name: Friday
+  - name: Friday 9/16
     events:
       - name: Breakfast
         start: '8:30 AM'
