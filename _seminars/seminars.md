@@ -8,12 +8,14 @@ seminars:
     talk_title: "\"Decoding Root Growth to Address Climate Change\""
     photo: wolfgang_busch.jpg
     keywords: Systems Genetics of Root Growth, Plant Based Carbon Sequestration
+    website: busch.salk.edu
     recording:
   - speaker: Graham McVicker, PhD
     speaker_title: Assistant Professor, Rentschler Developmental Chair, Salk Institute
     talk_title: "\"Using genome perturbations to decipher genetic variants with associated with immune traits\""
     photo: graham_mcvicker.jpg
     keywords: CRISPR, genome perturbations, genetic variation, human genetics, bioinformatics
+    website: mcvicker.salk.edu
     recording:
 - date: "2022-06-30"
   flyer:
@@ -23,12 +25,14 @@ seminars:
     talk_title: "\"Biomedical Predictive Modeling on Blockchain\""
     photo: tsung-ting_kuo.jpg
     keywords: healthcare, blockchain, predictive modeling
+    website: profiles.ucsd.edu/tsung-ting.kuo
     recording:
   - speaker: Qi (Rose) Yu, PhD
     speaker_title: Assistant Professor, UCSD Dept of Computer Science and Engineering
     talk_title: "\"Mean aortic pressure forecasting with deep sequence models\""
     photo: rose_yu.jpg
     keywords: cardiovascular, deep learning, time series, forecasting
+    website: roseyu.com
     recording:
 - date: "2022-07-07"
   flyer:
@@ -40,10 +44,11 @@ seminars:
     keywords:
     recording:
   - speaker: Vineet Bafna, PhD
-    speaker_title: Professor, Department of Computer Science & Engineering
+    speaker_title: Professor, Department of Computer Science & Engineering.
     talk_title: "\"Extrachromosomal DNA in cancer\""
     photo: vineet_bafna.jpg
     keywords: Cancer genomics, Population genetics, algorithms for computational biology
+    website: proteomics.ucsd.edu/vbafna
     recording:
 - date: "2022-07-14"
   flyer:
@@ -53,12 +58,14 @@ seminars:
     talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
     photo: kit_curtius.jpg
     keywords: mathematical modeling, pre-cancer evolution, translational bioinformatics
+    website: qcclab.com
     recording:
   - speaker: Jill Mesirov, PhD
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+    speaker_title: Professor, Department of Medicine
+    talk_title: "\"Computational approaches to the understanding and treatment of cancer\""
+    photo: jill_mesirov.jpg
+    keywords: cancer genomics, precision medicine, computational biology, software tools
+    website: mesirovlab.org
     recording:
 - date: "2022-07-21"
   flyer:
@@ -68,12 +75,14 @@ seminars:
     talk_title: "\"Computational methods for studying the 3D organization of the human genome\""
     photo: ferhat_ay.jpg
     keywords: 3D genome, Hi-C, HiChIP, enhancers, genetic variants
+    website: lji.org/labs/ay
     recording:
   - speaker: Rob Knight, PhD
     speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
     talk_title: "\"Microbiome research in the Knight Lab and at the Center for Microbiome Innovation\""
     photo: rob_knight.jpg
     keywords: microbiology, DNA sequencing, ecology and computer science
+    website: knightlab.ucsd.edu
     recording:
 - date: "2022-07-28"
   flyer:
@@ -89,6 +98,7 @@ seminars:
     talk_title: 
     photo: ron_evans.jpg
     keywords:
+    website: salk.edu/scientist/ronald-evans
     recording:
 - date: "2022-08-04"
   flyer:
@@ -104,6 +114,7 @@ seminars:
     talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
     photo: chris_benner.jpg
     keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
+    website: homer.ucsd.edu/BennerLab
     recording:
 - date: "2022-08-11"
   flyer:
@@ -128,14 +139,14 @@ seminars:
     talk_title: "\"Neuronal epigenomes and cognitive diversity\""
     photo: eran_mukamel.jpg
     keywords:
-    recording:
-    keywords:
+    website: brainome.ucsd.edu
     recording:
   - speaker: Bing Ren, PhD
     speaker_title: Professor, Department of Cellular and Molecular Medicine
     talk_title: "\"Single cell epigenome analysis in health and disease\""
     photo: bing_ren.jpg
     keywords: Epigenetics, Gene Regulation, 3D genome, Brain, Cancer
+    website: renlab.sdsc.edu
     recording:
 - date: "2022-08-25"
   flyer:
