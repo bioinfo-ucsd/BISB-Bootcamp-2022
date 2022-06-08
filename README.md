@@ -8,11 +8,11 @@ seo:
   name: Just the Class
 ---
 
-# BISB Bootcamp 2022
+# Bioinformatics & Systems Biology (BISB) Bootcamp 2022
 
 Welcome to the 2022 Bootcamp for incoming students to the UC San Diego Bioinformatics & Systems Biology (BISB) PhD program!
 
-This 5-day intensive course is designed to place incoming students on a path to success in their doctoral studies by conducting the following:
+This 5-day intensive course is designed to place incoming PhD students on a path to success in their doctoral studies by conducting the following:
 
 - Introduce the doctoral program, the UC San Diego, and the greater San Diego area
 - Foster community among students of the incoming cohort and with senior students
