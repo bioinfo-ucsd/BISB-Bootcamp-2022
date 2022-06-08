@@ -1,19 +1,17 @@
 <div class="announcement">
-  <h3>{{ page.date | date: "%A, %B %d" }}</h3>
+  <h2>{{ page.date | date: "%A, %B %d" }}</h2>
   {% for talk in page.talks %}
-  <hr>
-  <p>{{ talk.time }}</p>
   <div class="staffer">
     {% if talk.photo %}
     <img class="staffer-image" src="{{ site.baseurl }}{{ page.subpath }}{{ talk.photo }}" alt="">
     {% endif %}
     <div>
+      <p>{{ talk.time }}</p>
       <p>{{ talk.speaker }}</p>
       <p>{{ talk.speaker_title }}</p>
       <p><b>{{ talk.talk_title }}</b></p>
     </div>
   </div>
   {% endfor %}
-  <hr>
 </div>
 
