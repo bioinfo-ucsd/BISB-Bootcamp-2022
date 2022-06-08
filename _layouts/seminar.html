@@ -19,7 +19,7 @@
         <p>Research terms: {{ talk.keywords }} </p>
         {% endif %}
         {% if talk.website %}
-        <p><a href="{{ talk.website }}">{{ talk.website }}</a></p>
+        <p><a href="{{ talk.website }}">{{ talk.website | remove: "https://" | remove: "http://" }}</a></p>
         {% endif %}
         {% if talk.recording %}
         <p><a href="{{ talk.recording }}">Talk Recording</a></p>
