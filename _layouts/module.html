@@ -1,4 +1,11 @@
-<h2 class="fs-4" id="{{ page.title | slugify }}" >{{ page.title }}</h2>
 <div class="module">
-  {{ content }}
+  <h3>{{ page.time }}</h3>
+  <div>
+    {{ page.title  }}
+  </div>
+  <div>
+    {% for ins in page.instructors %}
+    {{ ins }}<br>
+    {% endfor %}
+  </div>
 </div>
