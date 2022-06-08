@@ -2,7 +2,7 @@
 
 This is a static website that hosts information for the 2022 UC San Diego Bioinformatics & Systems Biology PhD Program Bootcamp. The site is rendered using [Jekyll](https://jekyllrb.com/) and uses the [Just the Class website template by Kevin Lin](https://kevinl.info/just-the-class/).
 
-If you have ideas or suggestions for this website, please contribute or submit an issue!
+If you have ideas or suggestions for this website, please contribute and/or submit an issue!
 
 ## Contributing to this website
 
