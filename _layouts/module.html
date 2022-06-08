@@ -5,14 +5,14 @@
 <div class="module">
   {% capture start %}{% include minutes.liquid time=event.start %}{% endcapture %}
   {% capture end %}{% include minutes.liquid time=event.end %}{% endcapture %}
-  {% assign top = start | minus: offset | times: 40 | divided_by: 30 %}
-  {% assign height = end | minus: start | times: 40 | divided_by: 30 %}
   <h3>{{ event.name }}</h3>
   <div class="time">{{ event.start }}–{{ event.end }}</div>
   {% if event.instructors %}
   {% for instructor in event.instructors %}
-  <div class="instructors">{{ instructor | markdownify }}</div>
-  {% endfor %}
+  <div>
+    {{ instructor | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div>
+    {% endfor %}
   {% endif %}
 </div>
 {% endfor %}
