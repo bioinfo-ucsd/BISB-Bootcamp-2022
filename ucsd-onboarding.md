@@ -21,9 +21,9 @@ The Schedule of Classes, which lists courses available for the quarter, for Fall
 
 You can find the Schedule of Classes, along with other important services, on the [My TritonLink Tools page](https://students.ucsd.edu/my-tritonlink/tools/index.html). You will be able to enroll in classes beginning Friday, May 20th, at 8:00 AM PT.
 
-You may enroll in courses online using WebReg, whichc an also be found on My TritonLink Tools. You can find enrollment dates, and many other important dates and deadlines, on the [UCSD Enrollment & Registration Calendar](https://students.ucsd.edu/academics/enroll/calendar22-23.html). We highly recommended you bookmark this page to stay up-to-date on important deadlines.
+You may enroll in courses online using WebReg, which can also be found on My TritonLink Tools. You can find enrollment dates, and many other important dates and deadlines, on the [UCSD Enrollment & Registration Calendar](https://students.ucsd.edu/academics/enroll/calendar22-23.html). We highly recommended you bookmark this page to stay up-to-date on important deadlines.
 
-*NOTE: Registration can always be changed later, and more advice on courses will be relayed during Bootcamp. As such, it is not urgently required that you enroll in classes asap. In addition, many courses – particularly MED BMI courses – are not listed on WebReg until closer to the start of the Fall quarter.*
+**NOTE:** Registration can always be changed later. As such, it is not *urgently* required that you enroll in classes. That being said, Compute Science and Engineering (CSE) courses tend to fill up quickly, so we suggest starting to explore these. If a CSE course of interest is full, many students have found success in emailing the professor and explaining their interest. In addition, many courses – particularly MED BMI courses – are not listed on WebReg until closer to the start of the Fall quarter. More advice on courses will be relayed during Bootcamp.
 
 Course requirements can be found on the BISB [website](https://bioinformatics.ucsd.edu/node/104).
 
