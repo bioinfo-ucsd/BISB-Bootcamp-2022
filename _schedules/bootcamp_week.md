@@ -25,6 +25,12 @@ schedule:
       - name: Breakfast
         start: '8:30 AM'
         end: '9:00 AM'
+      - name: Opening Remarks from Program Directors
+        start: "9:00 AM"
+        end: "9:30 AM"
+      - name: Graduate Program Overview
+        start: "9:30 AM"
+        end: "11:00 AM"
   - name: Tuesday
     events:
       - name: Breakfast
