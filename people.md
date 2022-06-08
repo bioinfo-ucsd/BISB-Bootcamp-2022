@@ -16,7 +16,6 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {{ staffer }}
 {% endfor %}
 
-*For questions about bootcamp,* please contact the lead instructors!
 
 ## Guest Instructors
 
@@ -53,6 +52,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 
 ## Questions?
 
+*For questions about bootcamp,* please contact the lead instructors!
 
 *For general questions about student life in the BISB Program,* feel free to message to the BISB Student Discord. You should receive an invite link in our first email. Our discord server is entirely student-run, and you can find people from different labs, different years, and different program tracks! It is a great informal resource to chat with your fellow students, especially as many of us were working remotely during the COVID-19 pandemic. *Please note that the BISB Student Discord and the BISB Student Website are student-run and student-curated resources. Therefore, please do not share the access link with faculty or staff members.*
 
