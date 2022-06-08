@@ -13,7 +13,7 @@ seminars:
     speaker_title: Assistant Professor, Rentschler Developmental Chair, Salk Institute
     talk_title: "\"Using genome perturbations to decipher genetic variants with associated with immune traits\""
     photo: graham_mcvicker.jpg
-    keywords:
+    keywords: CRISPR, genome perturbations, genetic variation, human genetics, bioinformatics
     recording:
 - date: "2022-06-30"
   flyer:
@@ -22,13 +22,13 @@ seminars:
     speaker_title: Assistant Professor of Medicine, UCSD Health Dept of Biomedical Informatics
     talk_title: "\"Biomedical Predictive Modeling on Blockchain\""
     photo: tsung-ting_kuo.jpg
-    keywords:
+    keywords: healthcare, blockchain, predictive modeling
     recording:
   - speaker: Qi (Rose) Yu, PhD
     speaker_title: Assistant Professor, UCSD Dept of Computer Science and Engineering
     talk_title: "\"Mean aortic pressure forecasting with deep sequence models\""
     photo: rose_yu.jpg
-    keywords:
+    keywords: cardiovascular, deep learning, time series, forecasting
     recording:
 - date: "2022-07-07"
   flyer:
@@ -43,7 +43,7 @@ seminars:
     speaker_title: Professor, Department of Computer Science & Engineering
     talk_title: "\"Extrachromosomal DNA in cancer\""
     photo: vineet_bafna.jpg
-    keywords:
+    keywords: Cancer genomics, Population genetics, algorithms for computational biology
     recording:
 - date: "2022-07-14"
   flyer:
@@ -52,7 +52,7 @@ seminars:
     speaker_title: Assistant Professor, UCSD Division of Biomedical Informatics, Department of Medicine
     talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
     photo: kit_curtius.jpg
-    keywords:
+    keywords: mathematical modeling, pre-cancer evolution, translational bioinformatics
     recording:
   - speaker: Jill Mesirov, PhD
     speaker_title: 
@@ -64,16 +64,16 @@ seminars:
   flyer:
   talks:
   - speaker: Ferhat Ay, PhD
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+    speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
+    talk_title: "\"Computational methods for studying the 3D organization of the human genome\""
+    photo: ferhat_ay.jpg
+    keywords: 3D genome, Hi-C, HiChIP, enhancers, genetic variants
     recording:
   - speaker: Rob Knight, PhD
     speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
     talk_title: "\"Microbiome research in the Knight Lab and at the Center for Microbiome Innovation\""
     photo: rob_knight.jpg
-    keywords:
+    keywords: microbiology, DNA sequencing, ecology and computer science
     recording:
 - date: "2022-07-28"
   flyer:
@@ -103,7 +103,7 @@ seminars:
     speaker_title: Assistant Professor, Deptartment of Medicine
     talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
     photo: chris_benner.jpg
-    keywords:
+    keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
     recording:
 - date: "2022-08-11"
   flyer:
@@ -135,7 +135,7 @@ seminars:
     speaker_title: Professor, Department of Cellular and Molecular Medicine
     talk_title: "\"Single cell epigenome analysis in health and disease\""
     photo: bing_ren.jpg
-    keywords:
+    keywords: Epigenetics, Gene Regulation, 3D genome, Brain, Cancer
     recording:
 - date: "2022-08-25"
   flyer:
