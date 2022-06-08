@@ -1,5 +1,5 @@
 ---
-name: Lucila Ohno-Machado, M.D., Ph.D., M.B.A.
+name: Lucila Ohno-Machado, MD, PhD, MBA
 role: Chair
 email: lohnomachado@health.ucsd.edu
 title: BMI Graduate Program Chair
