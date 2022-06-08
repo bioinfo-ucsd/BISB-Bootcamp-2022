@@ -19,6 +19,9 @@
     {% if page.title %}
     <p>{{ page.title }}</p>
     {% endif %}
+    {% if page.advisors %}
+    <p>Advisor(s): {{ page.advisors }}</p>
+    {% endif %}
     {% if page.section %}
     <p class="staffer-meta">Quiz Section: {{ page.section | markdownify | strip_html }}</p>
     {% endif %}
