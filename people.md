@@ -16,12 +16,11 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {{ staffer }}
 {% endfor %}
 
-
-## Guest Instructors
-
 {% assign guests = site.staffers | where: 'role', 'Guest Instructor' %}
 {% assign num_guests = guests | size %}
 {% if num_guests != 0 %}
+
+## Guest Instructors
 
 {% for staffer in guests %}
 {{ staffer }}
@@ -32,7 +31,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% assign num_chairs = chairs | size %}
 {% if num_chairs != 0 %}
 
-### Program Chairs
+## Program Chairs
 
 {% for staffer in chairs %}
 {{ staffer }}
@@ -43,7 +42,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% assign num_admin = admin | size %}
 {% if num_admin != 0 %}
 
-### Administrative Staff
+## Administrative Staff
 
 {% for staffer in admin %}
 {{ staffer }}
