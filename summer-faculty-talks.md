@@ -5,7 +5,7 @@ description: Schedule for summer seminar series.
 nav_order: 2
 ---
 
-# Summer Faculty Talk Series
+# Summer Faculty Talks Series
 
 This seminar series is intended to be a forum for BISB and BMI faculty to share their research and for incoming students to learn about the research opportunities available.
 

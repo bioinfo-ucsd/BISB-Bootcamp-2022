@@ -1,0 +1,136 @@
+---
+seminars:
+- date: "2022-06-23"
+  flyer:
+  talks:
+  - speaker: Wolfgang Busch, PhD
+    speaker_title: Professor, Hess Chair in Plant Science, Salk Institute
+    talk_title: "\"Decoding Root Growth to Address Climate Change\""
+    photo: wolfgang_busch.jpg
+    recording:
+  - speaker: Graham McVicker, PhD
+    speaker_title: Assistant Professor, Rentschler Developmental Chair, Salk Institute
+    talk_title: "\"Using genome perturbations to decipher genetic variants with associated with immune traits\""
+    photo: graham_mcvicker.jpg
+- date: "2022-06-30"
+  flyer:
+  talks:
+  - speaker: Tsung-Ting (Tim) Kuo, PhD
+    speaker_title: Assistant Professor of Medicine, UCSD Health Dept of Biomedical Informatics
+    talk_title: "\"Biomedical Predictive Modeling on Blockchain\""
+    photo: tsung-ting_kuo.jpg
+  - speaker: Qi (Rose) Yu, PhD
+    speaker_title: Assistant Professor, UCSD Dept of Computer Science and Engineering
+    talk_title: "\"Mean aortic pressure forecasting with deep sequence models\""
+    photo: rose_yu.jpg
+- date: "2022-07-07"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: Vineet Bafna, PhD
+    speaker_title: Professor, Department of Computer Science & Engineering
+    talk_title: "\"Extrachromosomal DNA in cancer\""
+    photo: vineet_bafna.jpg
+- date: "2022-07-14"
+  flyer:
+  talks:
+  - speaker: Kit Curtius, PhD
+    speaker_title: Assistant Professor, UCSD Division of Biomedical Informatics, Department of Medicine
+    talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
+    photo: kit_curtius.jpg
+  - speaker: Jill Mesirov, PhD
+    speaker_title: 
+    talk_title: 
+    photo: 
+- date: "2022-07-21"
+  flyer:
+  talks:
+  - speaker: Ferhat Ay, PhD
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: Rob Knight, PhD
+    speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
+    talk_title: "\"Microbiome research in the Knight Lab and at the Center for Microbiome Innovation\""
+    photo: rob_knight.jpg
+- date: "2022-07-28"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: Ron Evans, PhD
+    speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
+    talk_title: 
+    photo: ron_evans.jpg
+- date: "2022-08-04"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: Chris Benner, PhD
+    speaker_title: Assistant Professor, Deptartment of Medicine
+    talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
+    photo: chris_benner.jpg
+- date: "2022-08-11"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+- date: "2022-08-18"
+  flyer:
+  talks:
+  - speaker: Eran Mukamel, PhD
+    speaker_title: Associate Professor of Cognitive Science
+    talk_title: "\"Neuronal epigenomes and cognitive diversity\""
+    photo: eran_mukamel.jpg
+  - speaker: Bing Ren, PhD
+    speaker_title: Professor, Department of Cellular and Molecular Medicine
+    talk_title: "\"Single cell epigenome analysis in health and disease\""
+    photo: bing_ren.jpg
+- date: "2022-08-25"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+- date: "2022-09-01"
+  flyer:
+  talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+- date: "2022-09-08"
+  flyer:
+  talks:
+  - speaker: Vikas Bansal, PhD
+    speaker_title: 
+    talk_title: 
+    photo: 
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+---

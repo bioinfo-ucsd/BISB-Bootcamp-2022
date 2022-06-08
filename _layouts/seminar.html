@@ -1,15 +1,19 @@
-<div class="announcement">
-  <h2>{{ page.date | date: "%A, %B %d" }}</h2>
-  {% for talk in page.talks %}
-  <div class="staffer">
-    {% if talk.photo %}
-    <img class="staffer-image" src="{{ site.baseurl }}{{ page.subpath }}{{ talk.photo }}" alt="">
-    {% endif %}
-    <div>
-      <p>{{ talk.speaker }}</p>
-      <p>{{ talk.speaker_title }}</p>
-      <p><b>{{ talk.talk_title }}</b></p>
+<div>
+  {% for seminar in page.seminars %}
+  <div class="announcement">
+    <h2>{{ seminar.date | date: "%A, %B %d" }}</h2>
+    {% for talk in seminar.talks %}
+    <div class="staffer">
+      {% if talk.photo %}
+      <img class="staffer-image" src="{{ site.baseurl }}{{ page.subpath }}{{ talk.photo }}" alt="">
+      {% endif %}
+      <div>
+        <p>{{ talk.speaker }}</p>
+        <p>{{ talk.speaker_title }}</p>
+        <p><b>{{ talk.talk_title }}</b></p>
+      </div>
     </div>
+    {% endfor %}
   </div>
   {% endfor %}
 </div>
