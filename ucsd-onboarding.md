@@ -7,7 +7,7 @@ nav_order: 3
 
 # UC San Diego Onboarding
 
-## Set up your UCSD email
+## Setup your UCSD email
 
 You may have already received information on how to set up and log into your UCSD email account. This information would have been sent via email to the email address you listed on your graduate application.
 

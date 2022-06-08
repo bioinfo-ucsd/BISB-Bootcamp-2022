@@ -28,7 +28,7 @@ Bootcamp is held in the week prior to the start of Fall classes, from **Monday, 
 
 ## Learn about BISB/BMI Research: Summer Faculty Talks
 
-Over the summer, prior to Bootcamp, we host a weekly seminar series via Zoom where BISB and BMI faculty share their work and incoming students can learn about research opportunities. To learn more about the series, see [Summer Faculty Talks](summer-faculty-talks.md).
+Over the summer, prior to Bootcamp, we host a weekly seminar series via Zoom where BISB and BMI faculty share their work and incoming students can learn about research opportunities. To learn more about the series, see [Summer Seminar Series](summer-seminar.md).
 
 ## Moving to San Diego
 

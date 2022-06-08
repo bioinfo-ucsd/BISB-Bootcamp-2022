@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Summer Faculty Talks
+title: Summer Seminar Series
 description: Schedule for summer seminar series.
 nav_order: 2
 ---
 
-# Summer Faculty Talks Series
+# Summer Seminar Series
 
 This seminar series is intended to be a forum for BISB and BMI faculty to share their research and for incoming students to learn about the research opportunities available.
 
