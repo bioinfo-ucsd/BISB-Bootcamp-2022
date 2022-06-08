@@ -54,8 +54,8 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 
 **For questions about bootcamp,** please contact the lead instructors!
 
-**For questions about student life** feel free to message to the BISB Student Discord. You should have received an invite link via email. Our discord server is entirely student-run, and you can find people from different labs, different years, and different program tracks! It is a great informal resource to chat with your fellow students. 
+**For questions about student life** feel free to message to the BISB Student Discord. You should have received an invite link via email. Our discord server is entirely student-run, and you can find people from different labs, different years, and different program tracks! It is a great informal resource to chat with your fellow students.
 
-*Please note that the BISB Student Discord and the BISB Student Website are student-run and student-curated resources. Therefore, please do not share the access link with faculty or staff members.*
+*Since the BISB Student Discord is completely student-run, we ask do not share the invite link with faculty or staff members.*
 
 **For questions about specifics of the program and program requirements,** please contact our program coordinator, Fran Perez Estrada! Another helpful contact, especially for financial matters, is Elizabeth Soos, the Student Affairs Manager for our program and the Department of Bioengineering.
