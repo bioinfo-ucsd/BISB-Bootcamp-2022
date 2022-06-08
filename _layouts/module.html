@@ -1,15 +1,26 @@
-<div class="module">
+{% for day in page.schedule %}
+<h2 class="module-header">{{ day.date | date: "%A, %B %d, %Y" }}</h2>
+{% if day.events %}
+{% for event in day.events %}
+<div class="module {{ event.type | slugify }}">
   {% capture start %}{% include minutes.liquid time=event.start %}{% endcapture %}
   {% capture end %}{% include minutes.liquid time=event.end %}{% endcapture %}
-  <h3>{{ page.title }}</h3>
-  <div class="time">{{ page.start }}–{{ page.end }}</div>
-  {% for instructor in page.instructors %}
+  <h3>{{ event.name }}</h3>
+  <div class="time">{{ event.start }}–{{ event.end }}</div>
+  {% if event.location %}
+  <div class="location">Location: {{ event.location }}</div>
+  {% endif %}
+  {% if event.instructors %}
+  {% for instructor in event.instructors %}
   <div>
     {{ instructor | markdownify | remove: '<p>' | remove: '</p>' }}
   </div>
-    {% endfor %}
+  {% endfor %}
+  {% endif %}
   <div>
-    {{ content }}
+    {{ event.description | markdownify }}
   </div>
-
 </div>
+{% endfor %}
+{% endif %}
+{% endfor %}

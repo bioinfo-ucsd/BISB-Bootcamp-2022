@@ -72,10 +72,9 @@
   }
 
   .schedule-event {
-    background-color: $grey-dk-000;
+    background-color: white;
     border-radius: $border-radius;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1), inset 0 -3px 0 rgba(0, 0, 0, .2);
-    color: $white;
     float: left;
     height: 100%;
     margin: 0;
@@ -84,7 +83,7 @@
     width: 100%;
 
     .name {
-      @extend .fs-3, .fw-700;
+      @extend .fs-2, .fw-700;
     }
 
     .time,
@@ -92,16 +91,21 @@
       @extend .fs-2;
     }
 
-    &.lecture {
-      background-color: $grey-dk-000;
+
+    &.break {
+      background-color: lightgrey;
     }
 
-    &.section {
-      background-color: $purple-000;
+    &.bio {
+      background-color: lightgreen;
     }
 
-    &.office-hours {
-      background-color: $blue-000;
+    &.cs {
+      background-color: lightblue;
+    }
+
+    &.social {
+      background-color: thistle;
     }
   }
 }

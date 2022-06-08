@@ -2,6 +2,7 @@
 layout: page
 title: Summer Faculty Talks
 description: Schedule for summer seminar series.
+nav_order: 2
 ---
 
 # Summer Faculty Talk Series
