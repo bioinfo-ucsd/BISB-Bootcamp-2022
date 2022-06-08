@@ -13,10 +13,9 @@ Seminars take place each **Thursday from 12:00 PM PT to 1:00 PM PT over Zoom, fr
 
 If you are unable to attend a seminar or you would like to rewatch a talk, you can find a collection of recordings in this [Google Drive Folder](https://drive.google.com/drive/folders/1BaqHq60zZ0wQcVU1gMukLwtHzxmWPSF3?usp=sharing).
 
-
 ## Schedule
 
-{% for seminar in site.summer_talks %}
+{% for seminar in site.seminars %}
 {{ seminar }}
 {% endfor %}
 

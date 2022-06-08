@@ -37,7 +37,7 @@ collections:
   modules:
   schedules:
   announcements:
-  summer_talks:
+  seminars:
 
 # Default layouts for each collection type
 defaults:
@@ -64,9 +64,10 @@ defaults:
       layout: announcement
   - scope:
       path: ''
-      type: summer_talks
+      type: seminars
     values:
-      layout: announcement
+      layout: seminar
+      subpath: '/assets/images/'
 
 compress_html:
   clippings: all

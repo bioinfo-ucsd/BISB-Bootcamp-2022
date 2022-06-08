@@ -1,0 +1,19 @@
+<div class="announcement">
+  <h3>{{ page.date | date: "%A, %B %d" }}</h3>
+  {% for talk in page.talks %}
+  <hr>
+  <div class="staffer">
+    <p>{{ talk.time }}</p>
+    {% if talk.photo %}
+    <img class="staffer-image" src="{{ site.baseurl }}{{ page.subpath }}{{ talk.photo }}" alt="">
+    {% endif %}
+    <div>
+      <p>{{ talk.speaker }}</p>
+      <p>{{ talk.speaker_title }}</p>
+      <p>{{ talk.talk_title }}</p>
+    </div>
+  </div>
+  {% endfor %}
+  <hr>
+</div>
+
