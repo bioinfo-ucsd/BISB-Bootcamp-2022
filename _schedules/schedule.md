@@ -56,6 +56,7 @@ schedule:
         start: '1:00 PM'
         end: '5:00 PM'
         location: UCSD Challenge Course (Eucalyptus Grove)
+        description: Read about [the course](https://recreation.ucsd.edu/adventures/the-course/)!
         
   - name: Wednesday
     date: '2022-09-14'
@@ -80,6 +81,7 @@ schedule:
         type: break
         start: '12:00 PM'
         end: '1:00 PM'
+
   - name: Friday
     date: '2022-09-16'
     events:
