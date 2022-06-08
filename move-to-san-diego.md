@@ -27,7 +27,7 @@ If you would like to live *close to campus* for your first year, there are many 
 - La Jolla Canyon Apartments
 - Westwood Apartment Homes
 - The Villas of Renaissance Apartment Homes
-- PLa Jolla Crossroads & 360 Luxury Apartments
+- La Jolla Crossroads & 360 Luxury Apartments
 
 While this is by no means a comprehensive list, it should give a good starting point.
 
