@@ -25,10 +25,10 @@ schedule:
       - name: Breakfast
         start: '8:30 AM'
         end: '9:00 AM'
-      - name: Opening Remarks from Program Directors
+      - name: Opening Remarks from Program Chairs
         start: "9:00 AM"
         end: "9:30 AM"
-        instructors: ["Terry Gaasterland, *BISB Chair*", "Lucila Ohno-Machado, *BMI Chair*"]
+        instructors: ["Terry Gaasterland, *BISB Program Chair*", "Lucila Ohno-Machado, *BMI Program Chair*"]
       - name: Graduate Program Overview
         start: "9:30 AM"
         end: "11:00 AM"
