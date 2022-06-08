@@ -1,10 +1,11 @@
 <div>
   {% for seminar in page.seminars %}
   <div class="announcement">
-    <h2><a id="{{ seminar.date }}"></a>{{ seminar.date | date: "%A, %B %d" }}</h2>
+    <h2><a id="{{ seminar.date }}"></a>{{ seminar.date | date: "%A, %B %d" }}&emsp;
     {% if seminar.flyer %}
-    <p><a href="{{ seminar.flyer }}">Flyer</a></p>
+    <a href="{{ site.baseurl }}{{ page.subpath }}{{ seminar.flyer }}">Flyer</a>
     {% endif %}
+    </h2>
     {% for talk in seminar.talks %}
     <div class="staffer">
       {% if talk.photo %}

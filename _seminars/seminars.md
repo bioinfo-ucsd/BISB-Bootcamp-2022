@@ -1,7 +1,7 @@
 ---
 seminars:
 - date: "2022-06-23"
-  flyer:
+  flyer: 06-23-2022_flyer.png
   talks:
   - speaker: Wolfgang Busch, PhD
     speaker_title: Professor, Hess Chair in Plant Science, Salk Institute
@@ -18,7 +18,7 @@ seminars:
     website: mcvicker.salk.edu
     recording:
 - date: "2022-06-30"
-  flyer:
+  flyer: 06-30-2022_flyer.png
   talks:
   - speaker: Tsung-Ting (Tim) Kuo, PhD
     speaker_title: Assistant Professor of Medicine, UCSD Health Dept of Biomedical Informatics
