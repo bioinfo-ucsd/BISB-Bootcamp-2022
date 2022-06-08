@@ -22,6 +22,9 @@
     {% if page.advisors %}
     <p>Advisor(s): {{ page.advisors }}</p>
     {% endif %}
+    {% if page.office-hours %}
+    <p class="staffer-meta"><a href="{{ page.office-hours }}">Book Office Hours</a></p>
+    {% endif %}
     {{ content }}
   </div>
 </div>
