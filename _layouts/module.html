@@ -1,11 +1,10 @@
 <div class="module">
-  <h3>{{ page.time }}</h3>
-  <div>
-    {{ page.title  }}
-  </div>
+  {% capture start %}{% include minutes.liquid time=event.start %}{% endcapture %}
+  {% capture end %}{% include minutes.liquid time=event.end %}{% endcapture %}
+  <h3>{{ page.start }}–{{ page.end }}: {{ page.title }}</h3>
   <div>
     {% for ins in page.instructors %}
-    {{ ins }}<br>
+    {{ ins | markdownify }}
     {% endfor %}
   </div>
 </div>

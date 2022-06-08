@@ -6,6 +6,8 @@ description: A detailed summary of Bootcamp modules.
 
 # Bootcamp Modules
 
-{% for schedule in site.schedules %}
-{{ schedule }}
+## **Day 1**: Monday, September 12, 2022
+
+{% for module in site.modules %}
+{{ module }}
 {% endfor %}
