@@ -37,7 +37,7 @@ seminars:
 - date: "2022-07-07"
   flyer:
   talks:
-  - speaker: 
+  - speaker: Yatish Turakhia, PhD
     speaker_title: 
     talk_title: 
     photo: 
@@ -103,11 +103,11 @@ seminars:
 - date: "2022-08-04"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+  - speaker: Alon Goren, PhD
+    speaker_title: Assistant Professor, Department of Medicine
+    talk_title: "\"Development of tools for interrogating the in vivo dynamic interactions of biomolecules\""
+    photo: alon_goren.jpg
+    keywords: epigenomic mechanisms; basic and disease biology; technological innovations and computational analyses
     recording:
   - speaker: Chris Benner, PhD
     speaker_title: Assistant Professor, Deptartment of Medicine
