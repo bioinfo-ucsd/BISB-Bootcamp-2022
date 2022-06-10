@@ -108,6 +108,7 @@ seminars:
     talk_title: "\"Development of tools for interrogating the in vivo dynamic interactions of biomolecules\""
     photo: alon_goren.jpg
     keywords: epigenomic mechanisms; basic and disease biology; technological innovations and computational analyses
+    website: https://goren-lab.github.io
     recording:
   - speaker: Chris Benner, PhD
     speaker_title: Assistant Professor, Deptartment of Medicine
