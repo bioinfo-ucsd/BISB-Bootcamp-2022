@@ -17,7 +17,9 @@
     <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
     {% endif %}
     {% if page.title %}
-    <p>{{ page.title }}</p>
+    {% for title in page.title %}
+    <p>{{ title }}</p>
+    {% endfor %}
     {% endif %}
     {% if page.advisors %}
     <p>Advisors: {{ page.advisors }}</p>
