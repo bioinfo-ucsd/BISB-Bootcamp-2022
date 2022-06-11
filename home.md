@@ -8,7 +8,7 @@ seo:
   name: Just the Class
 ---
 
-# Bioinformatics & Systems Biology (BISB) Bootcamp 2022
+# Bioinformatics & Systems Biology Bootcamp 2022
 
 Welcome to the 2022 Bootcamp for incoming students to the UC San Diego Bioinformatics & Systems Biology (BISB) PhD program!
 
