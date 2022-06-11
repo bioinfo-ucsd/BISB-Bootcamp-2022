@@ -70,12 +70,12 @@ seminars:
 - date: "2022-07-21"
   flyer:
   talks:
-  - speaker: Ferhat Ay, PhD
-    speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
-    talk_title: "\"Computational methods for studying the 3D organization of the human genome\""
-    photo: ferhat_ay.jpg
-    keywords: 3D genome, Hi-C, HiChIP, enhancers, genetic variants
-    website: https://lji.org/labs/ay
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+    keywords:
+    website: 
     recording:
   - speaker: Rob Knight, PhD
     speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
@@ -87,11 +87,12 @@ seminars:
 - date: "2022-07-28"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+  - speaker: Ferhat Ay, PhD
+    speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
+    talk_title: "\"Computational methods for studying the 3D organization of the human genome\""
+    photo: ferhat_ay.jpg
+    keywords: 3D genome, Hi-C, HiChIP, enhancers, genetic variants
+    website: https://lji.org/labs/ay
     recording:
   - speaker: Ron Evans, PhD
     speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
