@@ -40,7 +40,7 @@ seminars:
   - speaker: Yatish Turakhia, PhD
     speaker_title: Assistant Professor, Department of Electrical and Computer Engineering
     talk_title: Talk Title TBD
-    photo: 
+    photo: yatish_turakhia.jpg
     keywords:
     website: https://turakhia.eng.ucsd.edu
     recording:
@@ -187,10 +187,10 @@ seminars:
   - speaker: Vikas Bansal, PhD
     speaker_title: Associate Professor, Departments of Pediatrics and Computer Science and Engineering
     talk_title: Talk Title TBD
-    photo: 
+    photo: vikas_bansal.jpg
     keywords:
-    recording:
     website: https://bansal-lab.github.io
+    recording:
   - speaker: 
     speaker_title: 
     talk_title: 
