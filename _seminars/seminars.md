@@ -96,7 +96,7 @@ seminars:
     recording:
   - speaker: Ron Evans, PhD
     speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
-    talk_title: 
+    talk_title: Talk Title TBD
     photo: ron_evans.jpg
     keywords:
     website: https://salk.edu/scientist/ronald-evans
@@ -104,10 +104,10 @@ seminars:
 - date: "2022-08-04"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
+  - speaker: Matteo D'Antonio, PhD
+    speaker_title: Assistant Professor, Department of Biomedical Informatics
+    talk_title: Talk Title TBD
+    photo: matteo_dantonio.jpg
     keywords:
     recording:
   - speaker: 
