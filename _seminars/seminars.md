@@ -104,6 +104,21 @@ seminars:
 - date: "2022-08-04"
   flyer:
   talks:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+    keywords:
+    recording:
+  - speaker: 
+    speaker_title: 
+    talk_title: 
+    photo: 
+    keywords:
+    recording:
+- date: "2022-08-11"
+  flyer:
+  talks:
   - speaker: Alon Goren, PhD
     speaker_title: Assistant Professor, Department of Medicine
     talk_title: "\"Development of tools for interrogating the in vivo dynamic interactions of biomolecules\""
@@ -117,21 +132,6 @@ seminars:
     photo: chris_benner.jpg
     keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
     website: https://homer.ucsd.edu/BennerLab
-    recording:
-- date: "2022-08-11"
-  flyer:
-  talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
-    recording:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
     recording:
 - date: "2022-08-18"
   flyer:
