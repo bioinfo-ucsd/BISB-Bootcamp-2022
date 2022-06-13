@@ -106,10 +106,10 @@ seminars:
   flyer:
   talks:
   - speaker: Matteo D'Antonio, PhD
-    speaker_title: Assistant Professor, Department of Biomedical Informatics
-    talk_title: Talk Title TBD
+    speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
+    talk_title: “Understanding the associations between genetic variation and complex traits in diverse and admixed individuals”
     photo: matteo_dantonio.jpg
-    keywords: GWAS, haplotypes, genetic association studies
+    keywords: human genetics; genome-wide association studies; genetic variation
     recording:
   - speaker: 
     speaker_title: 
