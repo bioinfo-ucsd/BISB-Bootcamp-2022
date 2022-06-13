@@ -21,7 +21,7 @@ seminars:
   flyer: 06-30-2022_flyer.png
   talks:
   - speaker: Tsung-Ting (Tim) Kuo, PhD
-    speaker_title: Assistant Professor of Medicine, UCSD Health Department of Biomedical Informatics
+    speaker_title: Assistant Professor of Medicine, Department of Biomedical Informatics
     talk_title: "\"Biomedical Predictive Modeling on Blockchain\""
     photo: tsung-ting_kuo.jpg
     keywords: healthcare, blockchain, predictive modeling
@@ -38,10 +38,11 @@ seminars:
   flyer:
   talks:
   - speaker: Yatish Turakhia, PhD
-    speaker_title: 
-    talk_title: 
+    speaker_title: Assistant Professor, Department of Electrical and Computer Engineering
+    talk_title: Talk Title TBD
     photo: 
     keywords:
+    website: https://turakhia.eng.ucsd.edu
     recording:
   - speaker: Vineet Bafna, PhD
     speaker_title: Professor, Department of Computer Science & Engineering.
@@ -184,11 +185,12 @@ seminars:
   flyer:
   talks:
   - speaker: Vikas Bansal, PhD
-    speaker_title: 
+    speaker_title: Associate Professor, Pediatrics, Department of Computer Science and Engineering
     talk_title: 
     photo: 
     keywords:
     recording:
+    website: https://bansal-lab.github.io
   - speaker: 
     speaker_title: 
     talk_title: 
