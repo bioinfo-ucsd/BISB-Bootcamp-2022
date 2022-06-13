@@ -26,7 +26,7 @@ Bootcamp's content spans the topics listed above and is delivered through lectur
 
 Bootcamp is held in the week prior to the start of Fall classes, from **Monday, September 12, 2022 to Friday, September 16, 2022**, in **[MET](https://goo.gl/maps/eXQLH5v2zcRU8f8P8) room 141**. See the [Schedule Overview](schedule-overview.md) and [Schedule Details](schedule-details.md). *Please note the schedule is actively being developed and is subject to change.*
 
-## Learn about BISB/BMI Research: Summer Faculty Talks
+## Learn about BISB/BMI Research: Summer Seminar Series
 
 Over the summer, prior to Bootcamp, we host a weekly seminar series via Zoom where BISB and BMI faculty share their work and incoming students can learn about research opportunities. To learn more about the series, see [Summer Seminar Series](summer-seminar.md).
 
