@@ -109,7 +109,7 @@ seminars:
     speaker_title: Assistant Professor, Department of Biomedical Informatics
     talk_title: Talk Title TBD
     photo: matteo_dantonio.jpg
-    keywords:
+    keywords: GWAS, haplotypes, genetic association studies
     recording:
   - speaker: 
     speaker_title: 
