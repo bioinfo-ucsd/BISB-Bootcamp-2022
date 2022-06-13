@@ -186,7 +186,7 @@ seminars:
   talks:
   - speaker: Vikas Bansal, PhD
     speaker_title: Associate Professor, Pediatrics, Department of Computer Science and Engineering
-    talk_title: 
+    talk_title: Talk Title TBD
     photo: 
     keywords:
     recording:
