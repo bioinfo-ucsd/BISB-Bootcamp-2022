@@ -171,11 +171,12 @@ seminars:
 - date: "2022-09-01"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
+  - speaker: Gen-Sheng Feng, PhD
+    speaker_title: Professor, Department of Pathology
+    talk_title: Talk Title TBD
+    photo: gen-sheng_feng.jpg
     keywords:
+    website: https://sites.google.com/ucsd.edu/fenglivercancerresearch/home
     recording:
   - speaker: 
     speaker_title: 
