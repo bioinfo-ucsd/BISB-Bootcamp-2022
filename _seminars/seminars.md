@@ -172,7 +172,7 @@ seminars:
   flyer:
   talks:
   - speaker: Gen-Sheng Feng, PhD
-    speaker_title: Professor, Department of Pathology
+    speaker_title: Professor of Pathology and Molecular Biology
     talk_title: Talk Title TBD
     photo: gen-sheng_feng.jpg
     keywords:
