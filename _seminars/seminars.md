@@ -156,9 +156,9 @@ seminars:
   talks:
   - speaker: Hannah Carter, PhD
     speaker_title: Associate Professor, Department of Medicine, Division of Medical Genetics
-    talk_title: Talk Title TBD
+    talk_title: "\"Variant interpretation for applications in precision cancer medicine\""
     photo: hannah_carter.jpg
-    keywords: Cancer Biology; Genetic Variation; Machine Learning; Data Mining
+    keywords: Precision cancer medicine, immunotherapy, variant interpretation, gene regulatory networks, machine learning
     website: https://carterlab.info
     recording:
   - speaker: Christian Metallo, PhD
