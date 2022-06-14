@@ -71,12 +71,12 @@ seminars:
 - date: "2022-07-21"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
+  - speaker: Nathan Lewis, PhD
+    speaker_title: Associate Professor, Departments of Pediatrics and Bioengineering
+    talk_title: Talk Title TBD
+    photo: nathan_lewis.jpg
     keywords:
-    website: 
+    website: https://lewislab.ucsd.edu
     recording:
   - speaker: Rob Knight, PhD
     speaker_title: Professor, Departments of Pediatrics, Bioengineering, and Computer Science and Engineering
@@ -154,17 +154,19 @@ seminars:
 - date: "2022-08-25"
   flyer:
   talks:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
+  - speaker: Hannah Carter, PhD
+    speaker_title: Associate Professor, Department of Medicine, Division of Medical Genetics
+    talk_title: Talk Title TBD
     photo: 
-    keywords:
+    keywords: Cancer Biology; Genetic Variation; Machine Learning; Data Mining
+    website: https://carterlab.info/
     recording:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
+  - speaker: Christian Metallo, PhD
+    speaker_title: Professor, Salk Institute M-CBL and UCSD Department of Bioengineering (Adjunct)
+    talk_title: "\"Exploring metabolic drivers of disease from gene to flux\""
     photo: 
-    keywords:
+    keywords: amino acids, lipid, metabolic flux, enzyme promiscuity, cancer, neuropathy
+    website: https://metallo.salk.edu
     recording:
 - date: "2022-09-01"
   flyer:
