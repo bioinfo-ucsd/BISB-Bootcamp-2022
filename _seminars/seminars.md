@@ -157,14 +157,14 @@ seminars:
   - speaker: Hannah Carter, PhD
     speaker_title: Associate Professor, Department of Medicine, Division of Medical Genetics
     talk_title: Talk Title TBD
-    photo: 
+    photo: hannah_carter.jpg
     keywords: Cancer Biology; Genetic Variation; Machine Learning; Data Mining
-    website: https://carterlab.info/
+    website: https://carterlab.info
     recording:
   - speaker: Christian Metallo, PhD
     speaker_title: Professor, Salk Institute M-CBL and UCSD Department of Bioengineering (Adjunct)
     talk_title: "\"Exploring metabolic drivers of disease from gene to flux\""
-    photo: 
+    photo: christian_metallo.jpg
     keywords: amino acids, lipid, metabolic flux, enzyme promiscuity, cancer, neuropathy
     website: https://metallo.salk.edu
     recording:
