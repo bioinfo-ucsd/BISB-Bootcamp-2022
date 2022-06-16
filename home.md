@@ -34,6 +34,10 @@ Over the summer, prior to Bootcamp, we host a weekly seminar series via Zoom whe
 
 We suggest moving to San Diego in **early September** so you have some time to settle in and get to know the area. See [Move to San Diego](move-to-san-diego.md) for more information.
 
+## Onboard to UC San Diego
+
+Learn about setting up your new student accoutn, obtaining an ID card, signing up for classes, and more at [UC San Diego Onboarding](ucsd-onboarding.md).
+
 ## Course Instructors
 
 This course is led by current BISB graduate students! Four lead instructors curate Bootcamp's content and teach the majority of lectures, while guest instructors are invited to provide instruction on specialized topics. See [People](people.md) for more information.
