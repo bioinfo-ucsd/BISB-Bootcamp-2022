@@ -63,9 +63,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 
 Bootcamp content is either newly generated or adapted from previous years' work. We would like to credit past bootcamp instructors for their contributions, much of which the current content is based on.
 
-|   Instructor    | Bootcamp Years |
-| :-------------: | -------------- |
-| Michelle Ragsac | 2020-2021      |
-| Cameron Martino | 2020-2021      |
-|  Owen Chapman   | 2019-2020      |
-|  Jessica Zhou   | 2018-2019      |
+- Michelle Ragsac, 2020-2021
+- Cameron Martino, 2020-2021
+- Owen Chapman, 2019-2020
+- Jessica Zhou, 2018-2019
