@@ -58,3 +58,14 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 *Since the BISB Student Discord is completely student-run, we ask that you do not share the invite link with faculty or staff members.*
 
 **For questions about specifics of the program and program requirements,** please contact our wonderful program coordinator, Fran Perez Estrada! Another helpful contact, especially for financial matters, is Elizabeth Soos, the Student Affairs Manager for our program and the Department of Bioengineering.
+
+## Credits
+
+Bootcamp content is either newly generated or adapted from previous years' work. We would like to credit past bootcamp instructors for their contributions, much of which the current content is based on.
+
+|   Instructor    | Bootcamp Years |
+| :-------------: | -------------- |
+| Michelle Ragsac | 2020-2021      |
+| Cameron Martino | 2020-2021      |
+|  Owen Chapman   | 2019-2020      |
+|  Jessica Zhou   | 2018-2019      |
