@@ -111,11 +111,11 @@ seminars:
     photo: matteo_dantonio.jpg
     keywords: human genetics; genome-wide association studies; genetic variation
     recording:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+  - speaker: Christine Cheng, PhD
+    speaker_title: Associate Professor, Department of Psychiatry
+    talk_title: Talk Title TBD
+    photo: christine_cheng.jpg
+    keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
     recording:
 - date: "2022-08-11"
   flyer:
