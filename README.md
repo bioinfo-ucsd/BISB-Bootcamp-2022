@@ -9,6 +9,7 @@ If you have ideas or suggestions for this website, please contribute and/or subm
 1. Install Jekyll and clone this repo
 
     ```bash
+    gem sources --add https://rubygems.org/
     gem install bundler jekyll # install Jekyll
     git clone https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022 # clone this repo
     ```
