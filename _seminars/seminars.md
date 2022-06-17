@@ -38,10 +38,10 @@ seminars:
   flyer:
   talks:
   - speaker: Yatish Turakhia, PhD
-    speaker_title: Assistant Professor, Department of Electrical and Computer Engineering
-    talk_title: Talk Title TBD
+    speaker_title: Assistant Professor, Department of Electrical and Computer Engineering (ECE
+    talk_title: "\"Pandemic-scale Phylogenetics\""
     photo: yatish_turakhia.jpg
-    keywords:
+    keywords: COVID-19 Phylogenetics, Phylogenetic placement, Phylogenetic tree optimization, SARS-CoV-2 recombination
     website: https://turakhia.eng.ucsd.edu
     recording:
   - speaker: Vineet Bafna, PhD
