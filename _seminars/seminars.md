@@ -54,7 +54,7 @@ seminars:
 - date: "2022-07-14"
   flyer:
   talks:
-  - speaker: Kit Curtius, PhD
+  - speaker: Kathleen (Kit) Curtius, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
     talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
     photo: kit_curtius.jpg
