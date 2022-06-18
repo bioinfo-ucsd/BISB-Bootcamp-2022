@@ -178,11 +178,12 @@ seminars:
     keywords:
     website: https://sites.google.com/ucsd.edu/fenglivercancerresearch/home
     recording:
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
+  - speaker: Abraham Palmer, PhD
+    speaker_title: Professor & Vice Chair for Basic Research, Department of Psychiatry
+    talk_title: Talk Title TBD
+    photo: abraham_palmer.jpg
+    keywords: behavioral genetics, psychiatric genetics, substance abuse, impulsivity, human genetics, rat genetics, mouse genetics
+    website: https://palmerlab.org
     recording:
 - date: "2022-09-08"
   flyer:
