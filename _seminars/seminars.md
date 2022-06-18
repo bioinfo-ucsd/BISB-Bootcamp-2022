@@ -54,19 +54,19 @@ seminars:
 - date: "2022-07-14"
   flyer:
   talks:
-  - speaker: Kathleen (Kit) Curtius, PhD
-    speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
-    talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
-    photo: kit_curtius.jpg
-    keywords: mathematical modeling, pre-cancer evolution, translational bioinformatics
-    website: https://qcclab.com
-    recording:
   - speaker: Jill Mesirov, PhD
     speaker_title: Professor, Department of Medicine
     talk_title: "\"Computational approaches to the understanding and treatment of cancer\""
     photo: jill_mesirov.jpg
     keywords: cancer genomics, precision medicine, computational biology, software tools
     website: https://mesirovlab.org
+    recording:
+  - speaker: Kathleen (Kit) Curtius, PhD
+    speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
+    talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
+    photo: kit_curtius.jpg
+    keywords: mathematical modeling, pre-cancer evolution, translational bioinformatics
+    website: https://qcclab.com
     recording:
 - date: "2022-07-21"
   flyer:
