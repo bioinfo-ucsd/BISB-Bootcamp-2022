@@ -114,7 +114,7 @@ seminars:
   - speaker: Christine Cheng, PhD
     speaker_title: Associate Professor, Department of Psychiatry
     talk_title: Talk Title TBD
-    photo: christine_cheng.jpg
+    photo: christine_cheng.png
     keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
     recording:
 - date: "2022-08-11"
