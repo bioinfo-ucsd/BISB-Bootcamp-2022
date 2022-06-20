@@ -54,19 +54,19 @@ seminars:
 - date: "2022-07-14"
   flyer:
   talks:
-  - speaker: Jill Mesirov, PhD
-    speaker_title: Professor, Department of Medicine
-    talk_title: "\"Computational approaches to the understanding and treatment of cancer\""
-    photo: jill_mesirov.jpg
-    keywords: cancer genomics, precision medicine, computational biology, software tools
-    website: https://mesirovlab.org
-    recording:
   - speaker: Kathleen (Kit) Curtius, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
     talk_title: "\"Quantitative modeling of cancer evolution and early detection\""
     photo: kit_curtius.jpg
     keywords: mathematical modeling, pre-cancer evolution, translational bioinformatics
     website: https://qcclab.com
+  - speaker: Chris Benner, PhD
+    speaker_title: Assistant Professor, Deptartment of Medicine
+    talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
+    photo: chris_benner.jpg
+    keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
+    website: https://homer.ucsd.edu/BennerLab
+    recording:
     recording:
 - date: "2022-07-21"
   flyer:
@@ -127,12 +127,12 @@ seminars:
     keywords: epigenomic mechanisms; basic and disease biology; technological innovations and computational analyses
     website: https://goren-lab.github.io
     recording:
-  - speaker: Chris Benner, PhD
-    speaker_title: Assistant Professor, Deptartment of Medicine
-    talk_title: "\"Deciphering the cis-regulatory grammar of transcription initiation\""
-    photo: chris_benner.jpg
-    keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
-    website: https://homer.ucsd.edu/BennerLab
+  - speaker: Jill Mesirov, PhD
+    speaker_title: Professor, Department of Medicine
+    talk_title: "\"Computational approaches to the understanding and treatment of cancer\""
+    photo: jill_mesirov.jpg
+    keywords: cancer genomics, precision medicine, computational biology, software tools
+    website: https://mesirovlab.org
     recording:
 - date: "2022-08-18"
   flyer:
