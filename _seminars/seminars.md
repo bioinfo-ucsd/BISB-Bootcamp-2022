@@ -141,7 +141,7 @@ seminars:
     speaker_title: Associate Professor, Department of Cognitive Science
     talk_title: "\"Neuronal epigenomes and cognitive diversity\""
     photo: eran_mukamel.jpg
-    keywords:
+    keywords: Epigenome, Brain Development, DNA Methylation, Single cells
     website: https://brainome.ucsd.edu
     recording:
   - speaker: Bing Ren, PhD
