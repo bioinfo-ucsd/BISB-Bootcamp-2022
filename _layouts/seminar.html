@@ -3,7 +3,10 @@
   <div class="announcement">
     <h2><a id="{{ seminar.date }}"></a>{{ seminar.date | date: "%A, %B %d" }}&emsp;
     {% if seminar.flyer %}
-    <a href="{{ site.baseurl }}{{ page.subpath }}{{ seminar.flyer }}">Flyer</a>
+    <a href="{{ site.baseurl }}{{ page.subpath }}{{ seminar.flyer }}">Flyer</a>&emsp;
+    {% endif %}
+    {% if seminar.recording %}
+    <a href="{{ seminar.recording }}">Recording</a>&emsp;
     {% endif %}
     </h2>
     {% for talk in seminar.talks %}
@@ -20,9 +23,6 @@
         {% endif %}
         {% if talk.website %}
         <p><a href="{{ talk.website }}">{{ talk.website | remove: "https://" | remove: "http://" }}</a></p>
-        {% endif %}
-        {% if talk.recording %}
-        <p><a href="{{ talk.recording }}">Talk Recording</a></p>
         {% endif %}
       </div>
     </div>
