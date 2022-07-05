@@ -33,7 +33,7 @@ seminars:
     keywords: cardiovascular, deep learning, time series, forecasting
     website: https://roseyu.com
 - date: "2022-07-07"
-  flyer:
+  flyer: 07-07-2022_flyer.png
   talks:
   - speaker: Yatish Turakhia, PhD
     speaker_title: Assistant Professor, Department of Electrical and Computer Engineering
@@ -48,7 +48,7 @@ seminars:
     keywords: Cancer genomics, Population genetics, algorithms for computational biology
     website: http://proteomics.ucsd.edu/vbafna
 - date: "2022-07-14"
-  flyer:
+  flyer: 07-14-2022_flyer.png
   talks:
   - speaker: Kathleen (Kit) Curtius, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
