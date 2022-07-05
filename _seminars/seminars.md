@@ -18,6 +18,7 @@ seminars:
     website: https://mcvicker.salk.edu
 - date: "2022-06-30"
   flyer: 06-30-2022_flyer.png
+  recording: https://drive.google.com/file/d/1jfMtEa9WSfcsilBlj-MayPO9yPUtFHV6/view?usp=sharing
   talks:
   - speaker: Tsung-Ting (Tim) Kuo, PhD
     speaker_title: Assistant Professor of Medicine, Department of Biomedical Informatics
