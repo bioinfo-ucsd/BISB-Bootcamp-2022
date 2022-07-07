@@ -34,6 +34,7 @@ seminars:
     website: https://roseyu.com
 - date: "2022-07-07"
   flyer: 07-07-2022_flyer.png
+  recording: https://drive.google.com/file/d/1WR_vXVipeVVZdO_WeRQ1Cc-_6NR-OkXh/view?usp=sharing
   talks:
   - speaker: Yatish Turakhia, PhD
     speaker_title: Assistant Professor, Department of Electrical and Computer Engineering
