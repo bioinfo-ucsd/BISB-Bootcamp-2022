@@ -50,6 +50,7 @@ seminars:
     website: http://proteomics.ucsd.edu/vbafna
 - date: "2022-07-14"
   flyer: 07-14-2022_flyer.png
+  recording: https://drive.google.com/file/d/1selXjqvzDWc-VVYa6DOQAzSYp_kvgvVo/view?usp=sharing
   talks:
   - speaker: Kathleen (Kit) Curtius, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
