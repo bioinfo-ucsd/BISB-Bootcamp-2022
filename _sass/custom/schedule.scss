@@ -93,19 +93,19 @@
 
 
     &.break {
-      background-color: lightgrey;
+      background-color: rgb(237, 237, 237);
     }
 
-    &.bio {
-      background-color: lightgreen;
+    &.mod{
+      background-color: rgb(199, 236, 248);
     }
 
-    &.cs {
-      background-color: lightblue;
+    &.program{
+      background-color: rgb(206, 239, 206);
     }
 
     &.social {
-      background-color: thistle;
+      background-color: rgb(247, 224, 247);
     }
   }
 }
