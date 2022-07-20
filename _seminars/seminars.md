@@ -65,7 +65,7 @@ seminars:
     keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
     website: https://homer.ucsd.edu/BennerLab
 - date: "2022-07-21"
-  flyer:
+  flyer: 07-21-2022_flyer.png
   talks:
   - speaker: Nathan Lewis, PhD
     speaker_title: Associate Professor, Departments of Pediatrics and Bioengineering
