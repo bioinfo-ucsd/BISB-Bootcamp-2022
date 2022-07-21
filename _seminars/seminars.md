@@ -69,7 +69,7 @@ seminars:
   talks:
   - speaker: Nathan Lewis, PhD
     speaker_title: Associate Professor, Departments of Pediatrics and Bioengineering
-    talk_title: Talk Title TBD
+    talk_title: "\"Individuals can expose the social network of cells: Linking single cells to phenotypes with single cell omics\""
     photo: nathan_lewis.jpg
     keywords:
     website: https://lewislab.ucsd.edu
