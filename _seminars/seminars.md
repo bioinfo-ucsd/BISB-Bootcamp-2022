@@ -90,7 +90,7 @@ seminars:
     website: https://lji.org/labs/ay
   - speaker: Ron Evans, PhD
     speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
-    talk_title: "\"A Universal Gut Microbiome Signature Predicts NAFLD\""
+    talk_title: "\"A universal gut microbiome signature predicts non-alcoholic fatty liver disease (NAFLD)\""
     photo: ron_evans.jpg
     keywords:
     website: https://salk.edu/scientist/ronald-evans
