@@ -39,7 +39,7 @@ schedule:
         instructors: "Fran Perez Estrada, *BISB Program Coordinator*"
       - name: Bootcamp Overview
         type: program
-        start: "11:00 AM"
+        start: "11:15 AM"
         end: "12:00 PM"
         instructors: ["Hratch Baghdassarian, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*", "Mike Cuoco, *Bootcamp Instructor*", "Kiki Spaulding, *Bootcamp Instructor*"]
       - name: Lunch
@@ -157,7 +157,7 @@ schedule:
         type: program
         start: '11:30 AM'
         end: '12:00 PM'
-        instructors: "Owen Chapman *Guest Instructor*"
+        instructors: "Pratibha Jagannatha *Guest Instructor*"
       - name: Lunch
         type: break
         start: '12:00 PM'
@@ -191,14 +191,14 @@ schedule:
         instructors: "Hratch Baghdassarian, *Bootcamp Instructor*"
       - name: "Exit Survey"
         start: '11:30 AM'
-        end: '12:00 PM'
+        end: '12:30 PM'
       - name: Lunch
         type: break
-        start: '12:00 PM'
-        end: '1:00 PM'
+        start: '12:30 PM'
+        end: '1:30 PM'
       - name: Program-wide Welcome Event
         type: social
         start: '2:00 PM'
         end: '5:00 PM'
-        location: TBD
+        location: The Forum (Price Center)
 ---
