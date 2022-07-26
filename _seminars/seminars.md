@@ -80,7 +80,7 @@ seminars:
     keywords: microbiology, DNA sequencing, ecology and computer science
     website: https://knightlab.ucsd.edu
 - date: "2022-07-28"
-  flyer:
+  flyer: 07-28-2022_flyer.png
   talks:
   - speaker: Ferhat Ay, PhD
     speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
