@@ -82,6 +82,7 @@ seminars:
     website: https://knightlab.ucsd.edu
 - date: "2022-07-28"
   flyer: 07-28-2022_flyer.png
+  recording: https://drive.google.com/file/d/1T5KJGOfUN6AAmJQNZ0xhlk_ggLqBu9sq/view?usp=sharing
   talks:
   - speaker: Ferhat Ay, PhD
     speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
