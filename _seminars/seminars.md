@@ -66,6 +66,7 @@ seminars:
     website: https://homer.ucsd.edu/BennerLab
 - date: "2022-07-21"
   flyer: 07-21-2022_flyer.png
+  recording: https://drive.google.com/file/d/1IGE_a1ExujnZGbJxwex6-J9ysADTfYDT/view?usp=sharing
   talks:
   - speaker: Nathan Lewis, PhD
     speaker_title: Associate Professor, Departments of Pediatrics and Bioengineering
