@@ -104,7 +104,7 @@ seminars:
     keywords: human genetics; genome-wide association studies; genetic variation
   - speaker: Christine Cheng, PhD
     speaker_title: Associate Professor, Department of Psychiatry
-    talk_title: Talk Title TBD
+    talk_title: "\"Single cell transcriptomics for opioid use disorder and Alzheimer's disease\""
     photo: christine_cheng.png
     keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
 - date: "2022-08-11"
