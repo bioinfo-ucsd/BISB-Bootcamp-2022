@@ -176,10 +176,10 @@ seminars:
     photo: vikas_bansal.jpg
     keywords:
     website: https://bansal-lab.github.io
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
-    
+  - speaker: Siavash Mirarab, PhD
+    speaker_title: Associate Professor, Department of Electrical and Computer Engineering
+    talk_title: "\"Algorithmic methods for analyzing genome skimming and metagenomic data\""
+    photo: siavash_mirarab.jpeg
+    keywords: Genome skimming, Metagenomics, Phylogenetics, Algorithmic development
+    webiste: http://eceweb.ucsd.edu/~smirarab    
 ---
