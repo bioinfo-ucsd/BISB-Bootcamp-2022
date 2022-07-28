@@ -181,5 +181,5 @@ seminars:
     talk_title: "\"Algorithmic methods for analyzing genome skimming and metagenomic data\""
     photo: siavash_mirarab.jpeg
     keywords: Genome skimming, Metagenomics, Phylogenetics, Algorithmic development
-    webiste: http://eceweb.ucsd.edu/~smirarab    
+    website: http://eceweb.ucsd.edu/~smirarab    
 ---
