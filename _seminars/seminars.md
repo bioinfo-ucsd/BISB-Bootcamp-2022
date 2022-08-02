@@ -50,6 +50,7 @@ seminars:
     website: http://proteomics.ucsd.edu/vbafna
 - date: "2022-07-14"
   flyer: 07-14-2022_flyer.png
+  recording: https://drive.google.com/file/d/1selXjqvzDWc-VVYa6DOQAzSYp_kvgvVo/view?usp=sharing
   talks:
   - speaker: Kathleen (Kit) Curtius, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
@@ -64,11 +65,12 @@ seminars:
     keywords: transcription, TSS, motif finding, cis-regulatory grammar, transcription factors
     website: https://homer.ucsd.edu/BennerLab
 - date: "2022-07-21"
-  flyer:
+  flyer: 07-21-2022_flyer.png
+  recording: https://drive.google.com/file/d/1IGE_a1ExujnZGbJxwex6-J9ysADTfYDT/view?usp=sharing
   talks:
   - speaker: Nathan Lewis, PhD
     speaker_title: Associate Professor, Departments of Pediatrics and Bioengineering
-    talk_title: Talk Title TBD
+    talk_title: "\"Individuals can expose the social network of cells: Linking single cells to phenotypes with single cell omics\""
     photo: nathan_lewis.jpg
     keywords:
     website: https://lewislab.ucsd.edu
@@ -79,7 +81,8 @@ seminars:
     keywords: microbiology, DNA sequencing, ecology and computer science
     website: https://knightlab.ucsd.edu
 - date: "2022-07-28"
-  flyer:
+  flyer: 07-28-2022_flyer.png
+  recording: https://drive.google.com/file/d/1T5KJGOfUN6AAmJQNZ0xhlk_ggLqBu9sq/view?usp=sharing
   talks:
   - speaker: Ferhat Ay, PhD
     speaker_title: Associate Professor of Computational Biology, La Jolla Institute for Immunology (LJI)
@@ -89,7 +92,7 @@ seminars:
     website: https://lji.org/labs/ay
   - speaker: Ron Evans, PhD
     speaker_title: Professor, Head of Gene Expression Laboratory, Salk Institute
-    talk_title: Talk Title TBD
+    talk_title: "\"A universal gut microbiome signature predicts non-alcoholic fatty liver disease (NAFLD)\""
     photo: ron_evans.jpg
     keywords:
     website: https://salk.edu/scientist/ronald-evans
@@ -103,7 +106,7 @@ seminars:
     keywords: human genetics; genome-wide association studies; genetic variation
   - speaker: Christine Cheng, PhD
     speaker_title: Associate Professor, Department of Psychiatry
-    talk_title: Talk Title TBD
+    talk_title: "\"Single cell transcriptomics for opioid use disorder and Alzheimer's disease\""
     photo: christine_cheng.png
     keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
 - date: "2022-08-11"
@@ -175,10 +178,10 @@ seminars:
     photo: vikas_bansal.jpg
     keywords:
     website: https://bansal-lab.github.io
-  - speaker: 
-    speaker_title: 
-    talk_title: 
-    photo: 
-    keywords:
-    
+  - speaker: Siavash Mirarab, PhD
+    speaker_title: Associate Professor, Department of Electrical and Computer Engineering
+    talk_title: "\"Algorithmic methods for analyzing genome skimming and metagenomic data\""
+    photo: siavash_mirarab.jpeg
+    keywords: Genome skimming, Metagenomics, Phylogenetics, Algorithmic development
+    website: http://eceweb.ucsd.edu/~smirarab    
 ---
