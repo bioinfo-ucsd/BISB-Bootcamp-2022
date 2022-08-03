@@ -109,3 +109,35 @@
     }
   }
 }
+
+.input-color {
+  position: relative;
+}
+.input-color input {
+  padding-left: 20px;
+  font-weight: normal;
+}
+.input-color .color-box {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #ccc;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  &.break {
+    background-color: rgb(237, 237, 237);
+  }
+
+  &.mod{
+    background-color: rgb(199, 236, 248);
+  }
+
+  &.program{
+    background-color: rgb(206, 239, 206);
+  }
+
+  &.social {
+    background-color: rgb(247, 224, 247);
+  }
+}

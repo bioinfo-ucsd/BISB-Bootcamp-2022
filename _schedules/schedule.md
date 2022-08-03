@@ -19,6 +19,15 @@ timeline:
   - '4:30 PM'
   - '5:00 PM'
   - '5:30 PM'
+types:
+  - id: mod
+    name: Module 
+  - id: program
+    name: Program Information
+  - id: social
+    name: Social Event
+  - id: break
+    name: Break
 schedule:
   - name: Monday
     date: '2022-09-12'
@@ -51,16 +60,19 @@ schedule:
         start: "1:00 PM"
         end: "2:00 PM"
         instructors: ["Hratch Baghdassarian, *Bootcamp Instructor*", "Kiki Spaulding, *Bootcamp Instructor*"]
-      - name: "San Diego Sights, Eats, and Drinks" 
+      - name: "SD Sights, Eats, and Drinks" 
+        long name: "The BISB Guide to San Diego Sights, Eats, and Drinks"
         start: "2:00 PM"
-        end: "2:45 PM"
+        end: "2:30 PM"
         instructors: "Lauryn Bruce, *Bootcamp Instructor*"
       - name: "Module 2A: Sequencing"
+        long name: "Module 2A: Introduction to Sequencing Technologies"
         type: mod
         start: "2:45 PM"
         end: "3:30 PM"
         instructors: "Mike Cuoco, *Bootcamp Instructor*"
       - name: "Module 2B: Sequencing Data Analysis"
+        long name: "Module 2B: Introduction to Sequencing Data Analysis"
         type: mod
         start: "3:45 PM"
         end: "5:00 PM"
@@ -76,6 +88,7 @@ schedule:
       - name: "Breakout: Choosing an Advisor / International info"
         start: '9:00 AM'
         end: '10:00 AM'
+        instructor: ["Erick Armingol, *Guest Instructor*", "Alex Wenzel, *Guest Instructor*"]
       - name: "Module 3: Intro to Statistics"
         type: mod
         start: '10:00 AM'
@@ -130,12 +143,16 @@ schedule:
         start: '1:00 PM'
         end: '2:30 PM'
         instructors: "Hratch Baghdassarian. *Bootcamp Instructor*"
-      - name: "Getting Paid 1: Predoctoral Fellowships"
+      - name: "Predoctoral Fellowships"
+        long name: "Getting Paid 1: Predoctoral Fellowships"
         start: '2:45 PM'
         end: '3:45 PM'
-      - name: "Getting Paid 2: Predoctoral Internships"
+        instructors: "Mike Cuoco, *Bootcamp Instructor*"
+      - name: "Predoctoral Internships"
+        long name: "Getting Paid 2: Predoctoral Internships"
         start: '4:00 PM'
         end: '5:00 PM'
+        instructor: "Professor Nathan Lewis, *Guest Instructor*"
         
   - name: Thursday 
     date: '2022-09-15'
