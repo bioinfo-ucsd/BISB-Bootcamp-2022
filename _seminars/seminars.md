@@ -97,7 +97,7 @@ seminars:
     keywords:
     website: https://salk.edu/scientist/ronald-evans
 - date: "2022-08-04"
-  flyer:
+  flyer: 08-04-2022_flyer.png
   talks:
   - speaker: Matteo D'Antonio, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
@@ -110,7 +110,7 @@ seminars:
     photo: christine_cheng.png
     keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
 - date: "2022-08-11"
-  flyer:
+  flyer: 08-11-2022_flyer.png
   talks:
   - speaker: Alon Goren, PhD
     speaker_title: Assistant Professor, Department of Medicine
@@ -125,7 +125,7 @@ seminars:
     keywords: cancer genomics, precision medicine, computational biology, software tools
     website: https://mesirovlab.org
 - date: "2022-08-18"
-  flyer:
+  flyer: 08-18-2022_flyer.png
   talks:
   - speaker: Eran Mukamel, PhD
     speaker_title: Associate Professor, Department of Cognitive Science
