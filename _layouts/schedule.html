@@ -34,7 +34,7 @@
 </div>
 {% for type in page.types %}
 <div class="input-color">
-  <input type="text" value="{{ type.name }}" />
+  <div class="text">{{ type.name }}</div>
   <div class="color-box {{ type.id | slugify }}"></div>
 </div>
 {% endfor %}
