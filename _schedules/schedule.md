@@ -58,10 +58,12 @@ schedule:
         start: '12:00 PM'
         end: '1:00 PM'
       - name: "Module 1: Computational Environments" 
+        fullname: "Module 1:  Understanding Computational Environments" 
         type: mod
         start: "1:00 PM"
         end: "2:00 PM"
         instructors: ["Hratch Baghdassarian, *Bootcamp Instructor*", "Kiki Spaulding, *Bootcamp Instructor*"]
+        description: "In this module we will introduce you to the [UCSD Jupyterhub (Data Science) Platform](https://datahub.ucsd.edu/hub/login?next=%2Fhub%2F). You will learn how to navigate with Command Line Interfaces (CLI) using a Terminal Application. We will also cover package and environment management with including: how to use the [conda package manager](https://docs.conda.io/en/latest/), configuring conda channels, creating, saving, and loading new conda environments, and the basics of commonly-used python packages (e.g., jupyterlab, numpy, etc.) We will also go over the 5 basic concepts found in most programming languages. We will also review some examples of common programming tasks in bioinformatics including printing/manipulating text and reading/writing files."
       - name: "Enjoying San Diego" 
         type: other
         fullname: "Enjoying San Diego: The BISB Guide to San Diego Sights, Eats, and Drinks"
@@ -88,17 +90,21 @@ schedule:
         type: break
         start: '8:30 AM'
         end: '9:00 AM'
-      - name: "Breakout: Choosing an Advisor / International info"
+      - name: "International Info / Choosing an Advisor"
+        fullname: "Breakout: International Student Info Session / Choosing a PhD Advisor"
         type: other
+        location: MET 141 (International Student Info); MET 145 (Choosing a PhD Advisor)
         start: '9:00 AM'
         end: '10:00 AM'
-        instructor: ["Erick Armingol, *Guest Instructor*", "Alex Wenzel, *Guest Instructor*"]
+        instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Alex Wenzel, *Guest Instructor* (Choosing a PhD Advisor)"]
       - name: "Module 3: Intro to Statistics"
+        fullname: "Module 3: Introduction to Statistical Methods for Bioinformatics"
         type: mod
         start: '10:00 AM'
         end: '11:00 AM'
         instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Gibs Rahman, *Guest Instructor*"]
       - name: "Preview: GWAS"
+        fullname: "Preview: Genome-Wide Association Studies (GWAS)"
         type: other
         start: '11:15 AM'
         end: '12:00 PM'
@@ -122,18 +128,20 @@ schedule:
         start: '8:30 AM'
         end: '9:00 AM'
       - name: Scientific Communication
+        fullname: PhD-Level Scientific Communication
         type: other
         start: '9:00 AM'
         end: '10:00 AM'
-        instructors: ["Kathleen Dorrestein, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
+        instructors: ["Kathleen Dorrestein, *Guest Instructor*, Staff Research Associate, Dorrestein Lab", "Mike Cuoco, *Bootcamp Instructor*"]
       - name: "Module 4: Bioinformatics Problem Sets"
         type: mod
         start: '10:15 AM'
         end: '11:30 AM'
         instructors: ["Lauryn Bruce, *Bootcamp Instructor*", "Kiki Spaulding, *Bootcamp Instructor*"]
+        description: "In this module, you and a partner will be given a relatively simple problem to solve from the [Rosalind Bioinformatics Project](http://rosalind.info/about/)’s textbook track and bioinformatics stronghold track. By the end of this module, you should: 1. Have a working solution for your problem prepared! 2. Have a short slide (in this presentation) explaining your code along with a fun fact about yourselves!"
       - name: "Mental Health"
-        type: other
         fullname: "Mental Health in Graduate School"
+        type: other
         start: '11:30 AM'
         end: '12:00 PM'
         instructors: "Kiki Spaulding, *Bootcamp Instructor*"
@@ -157,7 +165,7 @@ schedule:
         fullname: "Getting Paid 2: Predoctoral Internships"
         start: '4:00 PM'
         end: '5:00 PM'
-        instructor: "Professor Nathan Lewis, *Guest Instructor*"
+        instructors: "Nathan Lewis, *Guest Instructor*, Associate Professor of Pediatrics and Bioengineering"
         
   - name: Thursday 
     date: '2022-09-15'
@@ -177,7 +185,7 @@ schedule:
         type: other
         start: '10:45 AM'
         end: '11:30 AM'
-        instructors: "Owen Chapman *Guest Instructor*"
+        instructors: "Owen Chapman, *Guest Instructor*"
       - name: "GBIC and You / DBMI"
         type: program
         start: '11:30 AM'
@@ -197,7 +205,7 @@ schedule:
         type: program
         start: '2:45 PM'
         end: '3:15 PM'
-        instructors: "Pratibha Jagannatha *Guest Instructor*"
+        instructors: "Pratibha Jagannatha, *Guest Instructor*"
       - name: "Module 7B: Introduction to Git"
         fullname: "Module 7B: Introduction to Version Control with Git and GitHub"
         type: mod
