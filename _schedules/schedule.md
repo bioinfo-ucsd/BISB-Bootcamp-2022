@@ -57,7 +57,7 @@ schedule:
         type: break
         start: '12:00 PM'
         end: '1:00 PM'
-      - name: "Module 1: Computational Environments" 
+      - name: "Computational Environments" 
         fullname: "Module 1:  Understanding Computational Environments" 
         type: mod
         start: "1:00 PM"
@@ -70,13 +70,13 @@ schedule:
         start: "2:00 PM"
         end: "2:30 PM"
         instructors: "Lauryn Bruce, *Bootcamp Instructor*"
-      - name: "Module 2A: Sequencing"
+      - name: "Sequencing Technologies"
         fullname: "Module 2A: Introduction to Sequencing Technologies"
         type: mod
         start: "2:45 PM"
         end: "3:30 PM"
         instructors: "Mike Cuoco, *Bootcamp Instructor*"
-      - name: "Module 2B: Sequencing Data Analysis"
+      - name: "Sequencing Data Analysis"
         fullname: "Module 2B: Introduction to Sequencing Data Analysis"
         type: mod
         start: "3:45 PM"
@@ -97,7 +97,7 @@ schedule:
         start: '9:00 AM'
         end: '10:00 AM'
         instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Alex Wenzel, *Guest Instructor* (Choosing a PhD Advisor)"]
-      - name: "Module 3: Intro to Statistics"
+      - name: "Intro to Statistics"
         fullname: "Module 3: Introduction to Statistical Methods for Bioinformatics"
         type: mod
         start: '10:00 AM'
@@ -105,7 +105,7 @@ schedule:
         instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Gibs Rahman, *Guest Instructor*"]
       - name: "Preview: GWAS"
         fullname: "Preview: Genome-Wide Association Studies (GWAS)"
-        type: other
+        type: mod
         start: '11:15 AM'
         end: '12:00 PM'
         instructors: ["Arya Massarat, *Guest Instructor*"]
@@ -133,7 +133,8 @@ schedule:
         start: '9:00 AM'
         end: '10:00 AM'
         instructors: ["Kathleen Dorrestein, *Guest Instructor*, Staff Research Associate, Dorrestein Lab", "Mike Cuoco, *Bootcamp Instructor*"]
-      - name: "Module 4: Bioinformatics Problem Sets"
+      - name: "Bioinformatics Problem Sets"
+        fullname: "Module 4: Bioinformatics Problem Sets"
         type: mod
         start: '10:15 AM'
         end: '11:30 AM'
@@ -149,7 +150,8 @@ schedule:
         type: break
         start: '12:00 PM'
         end: '1:00 PM'
-      - name: "Module 5: Data Visualization: ggplot, matplotlib, and seaborn"
+      - name: "Data Visualization"
+        fullname: "Module 5: Data Visualization: ggplot, matplotlib, and seaborn"
         type: mod
         start: '1:00 PM'
         end: '2:30 PM'
@@ -174,7 +176,7 @@ schedule:
         type: break
         start: '8:30 AM'
         end: '9:00 AM'
-      - name: "Module 6: Intro to ML"
+      - name: "Machine Learning"
         fullname: "Module 6: Introduction to Machine Learning"
         type: mod
         start: '9:00 AM'
@@ -182,7 +184,7 @@ schedule:
         instructors: ["Hratch Baghdassarian, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
       - name: "Preview: Cancer Bio"
         fullname: "Preview: Introduction to Cancer Biology"
-        type: other
+        type: mod
         start: '10:45 AM'
         end: '11:30 AM'
         instructors: "Owen Chapman, *Guest Instructor*"
@@ -195,7 +197,8 @@ schedule:
         type: break
         start: '12:00 PM'
         end: '1:00 PM'
-      - name: "Module 7A: Software Engineering on a Team"
+      - name: "Software Engineering"
+        fullname: "Module 7A: Software Engineering on a Team"
         type: mod
         start: '1:00 PM'
         end: '2:30 PM'
@@ -206,7 +209,7 @@ schedule:
         start: '2:45 PM'
         end: '3:15 PM'
         instructors: "Pratibha Jagannatha, *Guest Instructor*"
-      - name: "Module 7B: Introduction to Git"
+      - name: "Git and GitHub"
         fullname: "Module 7B: Introduction to Version Control with Git and GitHub"
         type: mod
         start: '3:30 PM'
@@ -220,7 +223,8 @@ schedule:
         type: break
         start: '8:30 AM'
         end: '9:00 AM'
-      - name: "Module 8: Reproducible Bioinformatics"
+      - name: "Reproducible Bioinformatics"
+        fullname: "Module 8: Reproducible Bioinformatics"
         type: mod
         start: '9:00 AM'
         end: '10:00 AM'
@@ -241,6 +245,6 @@ schedule:
       - name: Program-wide Welcome Event
         type: social
         start: '2:00 PM'
-        end: '4:00 PM'
+        end: '5:00 PM'
         location: The Forum (Price Center)
 ---
