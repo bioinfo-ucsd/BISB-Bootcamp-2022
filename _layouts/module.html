@@ -1,3 +1,11 @@
+<h3>Color Key </h3>
+{% for type in page.types %}
+<div class="input-color">
+  <div class="text">{{ type.name }}</div>
+  <div class="color-box {{ type.id | slugify }}"></div>
+</div>
+{% endfor %}
+
 {% for day in page.schedule %}
 <h2 class="module-header"><a id="{{ day.date }}"></a>{{ day.date | date: "%A, %B %d, %Y" }}</h2>
 {% if day.events %}
@@ -5,7 +13,11 @@
 <div class="module {{ event.type | slugify }}">
   {% capture start %}{% include minutes.liquid time=event.start %}{% endcapture %}
   {% capture end %}{% include minutes.liquid time=event.end %}{% endcapture %}
+  {% if event.fullname %}
+  <h3><a id="{{ event.fullname }}"></a>{{ event.fullname }}</h3>
+  {% else %}
   <h3><a id="{{ event.name }}"></a>{{ event.name }}</h3>
+  {% endif %}
   <div class="time">{{ event.start }}–{{ event.end }}</div>
   {% if event.location %}
   <div class="location">Location: {{ event.location }}</div>

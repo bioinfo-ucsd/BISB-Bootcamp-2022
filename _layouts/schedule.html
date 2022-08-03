@@ -32,10 +32,12 @@
     {% endfor %}
   </ul>
 </div>
+
+<!-- Dont put this above the schedule or the schedule will move off the page, not sure why -->
+<h3>Color Key </h3>
 {% for type in page.types %}
 <div class="input-color">
   <div class="text">{{ type.name }}</div>
   <div class="color-box {{ type.id | slugify }}"></div>
 </div>
 {% endfor %}
-
