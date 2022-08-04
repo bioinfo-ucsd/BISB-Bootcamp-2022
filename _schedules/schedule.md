@@ -245,6 +245,6 @@ schedule:
       - name: Program-wide Welcome Event
         type: social
         start: '2:00 PM'
-        end: '5:00 PM'
+        end: '4:00 PM'
         location: The Forum (Price Center)
 ---
