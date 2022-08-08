@@ -160,9 +160,9 @@ seminars:
   talks:
   - speaker: Gen-Sheng Feng, PhD
     speaker_title: Professor of Pathology and Molecular Biology
-    talk_title: Talk Title TBD
+    talk_title: "\"Bioinformatic analysis of liver development and cancer\""
     photo: gen-sheng_feng.jpg
-    keywords:
+    keywords: Anti-oncogenic roles of classic oncoproteins, molecular mechanisms of liver cancer initiation, liver cancer immunotherapy
     website: https://sites.google.com/ucsd.edu/fenglivercancerresearch/home
   - speaker: Abraham Palmer, PhD
     speaker_title: Professor & Vice Chair for Basic Research, Department of Psychiatry
