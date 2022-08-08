@@ -98,6 +98,7 @@ seminars:
     website: https://salk.edu/scientist/ronald-evans
 - date: "2022-08-04"
   flyer: 08-04-2022_flyer.png
+  recording: https://drive.google.com/file/d/1FZB2RfiFAsxX4eDN_QeT9P20UpxTODDS/view?usp=sharing
   talks:
   - speaker: Matteo D'Antonio, PhD
     speaker_title: Assistant Professor, Division of Biomedical Informatics, Department of Medicine
