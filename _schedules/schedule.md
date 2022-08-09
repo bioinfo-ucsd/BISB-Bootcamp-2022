@@ -197,24 +197,24 @@ schedule:
         type: break
         start: '12:00 PM'
         end: '1:00 PM'
-      - name: "Software Engineering"
-        fullname: "Module 7A: Software Engineering on a Team"
-        type: mod
-        start: '1:00 PM'
-        end: '2:30 PM'
-        instructors: ["Gibs Rahman, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
       - name: "DEI in BISB"
         fullname: "Diversity Equity and Inclusion (DEI) in the BISB program and at UCSD"
         type: program
-        start: '2:45 PM'
-        end: '3:15 PM'
+        start: '1:00 PM'
+        end: '1:30 PM'
         instructors: "Pratibha Jagannatha, *Guest Instructor*"
-      - name: "Git and GitHub"
-        fullname: "Module 7B: Introduction to Version Control with Git and GitHub"
+      - name: "Software Engineering (Lecture)"
+        fullname: "Module 7A: Software Engineering on a Team (Lecture)"
+        type: mod
+        start: '1:45 PM'
+        end: '3:15 PM'
+        instructors: ["Gibs Rahman, *Guest Instructor*", "Arya Massarat, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
+      - name: "Software Engineering (Workshop)"
+        fullname: "Module 7B: Software Engineering on a Team (Workshop)"
         type: mod
         start: '3:30 PM'
         end: '4:30 PM'
-        instructors: ["Gibs Rahman, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
+        instructors: ["Gibs Rahman, *Guest Instructor*", "Arya Massarat, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
 
   - name: Friday
     date: '2022-09-16'
