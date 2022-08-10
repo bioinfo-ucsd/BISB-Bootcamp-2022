@@ -70,18 +70,18 @@ schedule:
         start: "2:00 PM"
         end: "2:30 PM"
         instructors: "Lauryn Bruce, *Bootcamp Instructor*"
-      - name: "Sequencing Technologies"
-        fullname: "Module 2A: Introduction to Sequencing Technologies"
+      - name: "Sequencing Technologies (Lecture)"
+        fullname: "Module 2A: Introduction to Sequencing Technologies (Lecture)"
         type: mod
         start: "2:45 PM"
         end: "3:30 PM"
-        instructors: "Mike Cuoco, *Bootcamp Instructor*"
-      - name: "Sequencing Data Analysis"
-        fullname: "Module 2B: Introduction to Sequencing Data Analysis"
+        instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
+      - name: "Sequencing Data Analysis (Workshop)"
+        fullname: "Module 2B: Introduction to Sequencing Data Analysis (Workshop)"
         type: mod
         start: "3:45 PM"
         end: "5:00 PM"
-        instructors: "Mike Cuoco, *Bootcamp Instructor*"
+        instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
 
   - name: Tuesday
     date: '2022-09-13'
