@@ -166,7 +166,7 @@ seminars:
     website: https://sites.google.com/ucsd.edu/fenglivercancerresearch/home
   - speaker: Abraham Palmer, PhD
     speaker_title: Professor & Vice Chair for Basic Research, Department of Psychiatry
-    talk_title: Talk Title TBD
+    talk_title: "\"Using outbred rats for genome-wide association studies\""
     photo: abraham_palmer.jpg
     keywords: behavioral genetics, psychiatric genetics, substance abuse, impulsivity, human genetics, rat genetics, mouse genetics
     website: https://palmerlab.org
