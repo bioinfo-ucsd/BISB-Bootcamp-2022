@@ -141,7 +141,7 @@ seminars:
     keywords: Epigenetics, Gene Regulation, 3D genome, Brain, Cancer
     website: http://renlab.sdsc.edu
 - date: "2022-08-25"
-  flyer:
+  flyer: 08-25-2022_flyer.png
   talks:
   - speaker: Hannah Carter, PhD
     speaker_title: Associate Professor, Department of Medicine, Division of Medical Genetics
@@ -156,7 +156,7 @@ seminars:
     keywords: amino acids, lipid, metabolic flux, enzyme promiscuity, cancer, neuropathy
     website: https://metallo.salk.edu
 - date: "2022-09-01"
-  flyer:
+  flyer: 09-01-2022_flyer.png
   talks:
   - speaker: Gen-Sheng Feng, PhD
     speaker_title: Professor of Pathology and Molecular Biology
