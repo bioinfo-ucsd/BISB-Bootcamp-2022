@@ -9,7 +9,7 @@ nav_order: 100
 
 Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootcamp's content and teach the majority of modules. Guest instructors lead single modules on specialized topics.
 
-## Lead Instructors
+## Bootcamp Instructors
 
 {% assign instructors = site.staffers | where: 'role', 'Bootcamp Instructor' %}
 {% for staffer in instructors %}
