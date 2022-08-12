@@ -25,4 +25,4 @@ If you are unable to attend a seminar or you would like to rewatch a talk, we wi
 
 If you're having trouble setting up Zoom, follow [instructions for downloading Zoom and associating it with your UCSD account](https://blink.ucsd.edu/technology/file-sharing/zoom/index.html).
 
-Please contact the lead Bootcamp instructors if you have any questions or if you are having difficulties accessing this seminar.
+Please contact the bootcamp instructors if you have any questions or if you are having difficulties accessing this seminar.
