@@ -112,6 +112,7 @@ seminars:
     keywords: single cell transcriptomics/epigenetics, 3D brain organoid, Alzheimer’s disease, opioid addiction, HIV
 - date: "2022-08-11"
   flyer: 08-11-2022_flyer.png
+  recording: https://drive.google.com/file/d/1ZcOl90mgXT5Jx-hLsZ6F9Svc07CRyoKZ/view?usp=sharing
   talks:
   - speaker: Alon Goren, PhD
     speaker_title: Assistant Professor, Department of Medicine
