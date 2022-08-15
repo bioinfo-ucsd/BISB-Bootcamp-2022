@@ -1,0 +1,8 @@
+name: bootcamp
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - conda-forge::gsutil
+  - conda-forge::ipykernel
