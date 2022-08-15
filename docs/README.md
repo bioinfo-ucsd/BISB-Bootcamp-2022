@@ -23,6 +23,3 @@ If you have ideas or suggestions for this website, please contribute and/or subm
 
 4. Push your changes (if you are listed as a collaborator) or submit a pull request (if you're external)
 
-## Adapting this website for future Bootcamps
-
-Click [Use this template](https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022/generate) to create a new repo for a future bootcamp. Then edit away!
