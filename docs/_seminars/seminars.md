@@ -175,10 +175,10 @@ seminars:
   flyer:
   talks:
   - speaker: Vikas Bansal, PhD
-    speaker_title: Associate Professor, Departments of Pediatrics and Computer Science and Engineering
-    talk_title: Talk Title TBD
+    speaker_title: Associate Professor, Division of Genome Information Sciences (Pediatrics), School of Medicine
+    talk_title: "\"Variant calling in low-copy repeats in the human genome\""
     photo: vikas_bansal.jpg
-    keywords:
+    keywords: variant calling, DNA sequencing technologies, long repeats, duplicated genes
     website: https://bansal-lab.github.io
   - speaker: Siavash Mirarab, PhD
     speaker_title: Associate Professor, Department of Electrical and Computer Engineering
