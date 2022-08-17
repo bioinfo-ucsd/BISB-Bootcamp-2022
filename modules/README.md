@@ -1,6 +1,6 @@
 # BISB Bootcamp 2022 Course Materials
 
-## Setting up conda on DataHub
+## Setting up conda on DataHub (everyone)
 
 ```bash
 conda create -n my_base -c conda-forge mamba
