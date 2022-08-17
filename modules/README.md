@@ -3,7 +3,8 @@
 ## Setting up conda on DataHub
 
 ```bash
-conda create -n my_base 
+conda create -n my_base -c conda-forge mamba
+source activate my_base
 mamba env create -f env.yaml
 ```
 
