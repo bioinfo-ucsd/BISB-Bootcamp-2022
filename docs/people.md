@@ -16,6 +16,17 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {{ staffer }}
 {% endfor %}
 
+{% assign chairs = site.staffers | where: 'role', 'Chair' %}
+{% assign num_chairs = chairs | size %}
+{% if num_chairs != 0 %}
+
+## Program Chairs
+
+{% for staffer in chairs %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
 {% assign guests = site.staffers | where: 'role', 'Guest Instructor' %}
 {% assign num_guests = guests | size %}
 {% if num_guests != 0 %}
@@ -27,13 +38,24 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% endfor %}
 {% endif %}
 
-{% assign chairs = site.staffers | where: 'role', 'Chair' %}
-{% assign num_chairs = chairs | size %}
-{% if num_chairs != 0 %}
+{% assign fellows = site.staffers | where: 'role', 'Fellowship Panel' %}
+{% assign num_fellows = fellows | size %}
+{% if num_fellows != 0 %}
 
-## Program Chairs
+## Fellowship Panelists
 
-{% for staffer in chairs %}
+{% for staffer in fellows %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
+{% assign interns = site.staffers | where: 'role', 'Internship Panel' %}
+{% assign num_interns = interns | size %}
+{% if num_interns != 0 %}
+
+## Internship Panelists
+
+{% for staffer in interns %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
