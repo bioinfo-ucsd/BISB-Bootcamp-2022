@@ -6,10 +6,18 @@ nav_order: 100
 ---
 
 # People
+{:.no_toc}
 
-Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors curate Bootcamp's content and teach the majority of modules. Guest instructors also leaed modules on specialized topics.
+Bootcamp is led by current BISB/BMI PhD students with help from many others!
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Bootcamp Instructors
+
+Bootcamp instructors curate Bootcamp's content and teach the majority of modules.
 
 {% assign instructors = site.staffers | where: 'role', 'Bootcamp Instructor' %}
 {% for staffer in instructors %}
@@ -20,9 +28,20 @@ Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors cur
 {% assign chairs = site.staffers | where: 'role', 'Chair' %}
 {% if chairs.size != 0 %}
 
-## Program Chairs
+## Program Chairs and Administration
+
+Program chairs and administrators present information about program operations. 
 
 {% for staffer in chairs %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
+<!-- only print next section if these ppl exist -->
+{% assign admin = site.staffers | where: 'role', 'Admin' %}
+{% if admin.size != 0 %}
+
+{% for staffer in admin %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
@@ -32,6 +51,8 @@ Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors cur
 {% if guests.size != 0 %}
 
 ## Guest Instructors
+
+Guest instructors lead modules on specialized topics.
 
 {% for staffer in guests %}
 {{ staffer }}
@@ -44,6 +65,8 @@ Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors cur
 
 ## Fellowship Panelists
 
+These students will sit on a panel for Q&A during the Fellowships session
+
 {% for staffer in fellows %}
 {{ staffer }}
 {% endfor %}
@@ -55,18 +78,9 @@ Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors cur
 
 ## Internship Panelists
 
+These students will sit on a panel for Q&A during the Internships session
+
 {% for staffer in interns %}
-{{ staffer }}
-{% endfor %}
-{% endif %}
-
-<!-- only print next section if these ppl exist -->
-{% assign admin = site.staffers | where: 'role', 'Admin' %}
-{% if admin.size != 0 %}
-
-## Administrative Staff
-
-{% for staffer in admin %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
