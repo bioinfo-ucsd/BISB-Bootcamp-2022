@@ -1,8 +1,8 @@
 ---
 name: Arya Massarat
-role: ["Guest Instructor", "Fellowship Panel"]
+role: "Fellowship Panel"
 email: amassara@ucsd.edu
-advisor: Melissa Gymrek
+advisor: ["Melissa Gymrek"]
 title: 3rd year BISB PhD student
 pronouns: he/him
 photo: arya_massarat.jpg

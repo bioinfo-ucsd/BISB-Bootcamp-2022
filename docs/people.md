@@ -7,7 +7,7 @@ nav_order: 100
 
 # People
 
-Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootcamp's content and teach the majority of modules. Guest instructors lead single modules on specialized topics.
+Bootcamp is led by current BISB PhD students! Four lead Bootcamp instructors curate Bootcamp's content and teach the majority of modules. Guest instructors also leaed modules on specialized topics.
 
 ## Bootcamp Instructors
 
@@ -16,6 +16,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {{ staffer }}
 {% endfor %}
 
+<!-- only print next section if these ppl exist -->
 {% assign chairs = site.staffers | where: 'role', 'Chair' %}
 {% assign num_chairs = chairs | size %}
 {% if num_chairs != 0 %}
@@ -27,6 +28,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% endfor %}
 {% endif %}
 
+<!-- only print next section if these ppl exist -->
 {% assign guests = site.staffers | where: 'role', 'Guest Instructor' %}
 {% assign num_guests = guests | size %}
 {% if num_guests != 0 %}
@@ -38,6 +40,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% endfor %}
 {% endif %}
 
+<!-- only print next section if these ppl exist -->
 {% assign fellows = site.staffers | where: 'role', 'Fellowship Panel' %}
 {% assign num_fellows = fellows | size %}
 {% if num_fellows != 0 %}
@@ -49,6 +52,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% endfor %}
 {% endif %}
 
+<!-- only print next section if these ppl exist -->
 {% assign interns = site.staffers | where: 'role', 'Internship Panel' %}
 {% assign num_interns = interns | size %}
 {% if num_interns != 0 %}
@@ -60,6 +64,7 @@ Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootc
 {% endfor %}
 {% endif %}
 
+<!-- only print next section if these ppl exist -->
 {% assign admin = site.staffers | where: 'role', 'Admin' %}
 {% assign num_admin = admin | size %}
 {% if num_admin != 0 %}
