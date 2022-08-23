@@ -13,4 +13,9 @@ When you would like to update your materials, please continue working on your br
 
 1. Login to DataHub with personal account
 2. Clone this repo into your home directory
-3. Test away
+3. Test away!
+
+## Adding course data to DataHub
+
+1. Login to DataHub with nbgrader account
+2. Download any relevant course data to the `/datasets/bnfo000-fa22-a00-public` directory. This folder is readable by everyone but can only be written to by the nbgrader account.
