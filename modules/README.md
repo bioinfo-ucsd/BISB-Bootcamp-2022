@@ -1,12 +1,5 @@
 # BISB Bootcamp 2022 Course Materials
 
-## Setting up conda on DataHub (everyone)
-
-```bash
-conda create -n my_base -c conda-forge mamba
-source activate my_base
-mamba env create -f env.yaml
-```
 
 ## How add course materials (instructors only)
 
@@ -17,10 +10,3 @@ mamba env create -f env.yaml
 
 When you would like to update your materials, please continue working on your branch and submit pull requests to update the main branch.
 
-## How to test course materials (instructors only)
-
-1. Login to DataHub using nbgrader account 
-2. Navigate to `~/public/BISB-Bootcamp-2022`
-3. Run `git pull` to update the local copy of this repository
-4. *Do not sign into your personal git account GitHub from the nbgrader DataHub account*
-5. Test away!
