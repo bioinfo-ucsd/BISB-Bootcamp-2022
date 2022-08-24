@@ -2,7 +2,7 @@
 layout: page
 title: Parking at UCSD
 description: Parking Information on campus
-nav_order: 8
+nav_order: 3
 ---
 
 # Parking at UCSD
@@ -26,4 +26,5 @@ To pay for a daily graduate student permit, sign up for the [Park Mobile](https:
 ## Free ways to get to campus during the quarter
 
 The trolley is free for students (during the quarter) by obtaining a U-Pass through the [Pronto app](https://transportation.ucsd.edu/commute/transit/index.html). Parking at trolley stops is free (but limited) and then riding the train is free!
-  
+
+[UCSD's transportation and parking info for graduate students page](https://transportation.ucsd.edu/commute/grad-students.html) provides information on the Triton U-Pass program for public transit access, carpools options, parking permits, cycling benefits, and more.
