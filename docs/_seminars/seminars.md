@@ -128,6 +128,7 @@ seminars:
     website: https://mesirovlab.org
 - date: "2022-08-18"
   flyer: 08-18-2022_flyer.png
+  recording: https://drive.google.com/file/d/1PChz9D8-t8oHVY6c-1SCen5y9YcaIOQK/view?usp=sharing
   talks:
   - speaker: Eran Mukamel, PhD
     speaker_title: Associate Professor, Department of Cognitive Science
