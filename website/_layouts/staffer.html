@@ -26,6 +26,16 @@
     {% elsif page.advisor.size > 1 %}
     <p><b>Advisors:</b> {{ page.advisor | array_to_sentence_string }}</p>
     {% endif %}
+    {% if page.fellowship.size == 1 %}
+    <p><b>Fellowship:</b> {{ page.fellowship }}</p>
+    {% elsif page.fellowship.size > 1 %}
+    <p><b>Fellowships:</b> {{ page.fellowship | array_to_sentence_string }}</p>
+    {% endif %}
+    {% if page.internship.size == 1 %}
+    <p><b>Internship:</b> {{ page.internship }}</p>
+    {% elsif page.internship.size > 1 %}
+    <p><b>Internships:</b> {{ page.internship | array_to_sentence_string }}</p>
+    {% endif %}
     {% if page.session %}
     <p><b>Sessions:</b></p>
       {% for session in page.session %}
