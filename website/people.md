@@ -6,45 +6,81 @@ nav_order: 100
 ---
 
 # People
+{:.no_toc}
 
-Bootcamp is led by current BISB PhD students! Four lead instructors curate Bootcamp's content and teach the majority of modules. Guest instructors lead single modules on specialized topics.
+Bootcamp is led by current BISB/BMI PhD students with help from many others!
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Bootcamp Instructors
+
+Bootcamp instructors curate Bootcamp's content and teach the majority of modules.
 
 {% assign instructors = site.staffers | where: 'role', 'Bootcamp Instructor' %}
 {% for staffer in instructors %}
 {{ staffer }}
 {% endfor %}
 
-{% assign guests = site.staffers | where: 'role', 'Guest Instructor' %}
-{% assign num_guests = guests | size %}
-{% if num_guests != 0 %}
-
-## Guest Instructors
-
-{% for staffer in guests %}
-{{ staffer }}
-{% endfor %}
-{% endif %}
-
+<!-- only print next section if these ppl exist -->
 {% assign chairs = site.staffers | where: 'role', 'Chair' %}
-{% assign num_chairs = chairs | size %}
-{% if num_chairs != 0 %}
+{% if chairs.size != 0 %}
 
-## Program Chairs
+## Program Chairs and Administration
+
+Program chairs and administrators present information about program operations. 
 
 {% for staffer in chairs %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
 
+<!-- only print next section if these ppl exist -->
 {% assign admin = site.staffers | where: 'role', 'Admin' %}
-{% assign num_admin = admin | size %}
-{% if num_admin != 0 %}
-
-## Administrative Staff
+{% if admin.size != 0 %}
 
 {% for staffer in admin %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
+<!-- only print next section if these ppl exist -->
+{% assign guests = site.staffers | where: 'role', 'Guest Instructor' %}
+{% if guests.size != 0 %}
+
+## Guest Instructors
+
+Guest instructors lead modules on specialized topics.
+
+{% for staffer in guests %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
+<!-- only print next section if these ppl exist -->
+{% assign fellows = site.staffers | where: 'role', 'Fellowship Panel' %}
+{% if fellows.size != 0 %}
+
+## Fellowship Panelists
+
+These students will sit on a panel for Q&A during the Fellowships session
+
+{% for staffer in fellows %}
+{{ staffer }}
+{% endfor %}
+{% endif %}
+
+<!-- only print next section if these ppl exist -->
+{% assign interns = site.staffers | where: 'role', 'Internship Panel' %}
+{% if interns.size != 0 %}
+
+## Internship Panelists
+
+These students will sit on a panel for Q&A during the Internships session
+
+{% for staffer in interns %}
 {{ staffer }}
 {% endfor %}
 {% endif %}

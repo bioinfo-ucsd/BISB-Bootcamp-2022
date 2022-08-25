@@ -42,7 +42,3 @@ If you would like to live *further away from campus*, there are some popular nei
 Regardless of where you want to live off-campus, you can find rental offers through resources such as the [UCSD Off-Campus Housing Webiste](https://offcampushousing.ucsd.edu/), [UCSD Off-Campus Housing Facebook Group](https://www.facebook.com/groups/2387457222/), Facebook Marketplace, Zillow, and Craigslist.
 
 Be sure to check [UCSD's Housing Near Transit page](https://transportation.ucsd.edu/commute/housing.html) for neighborhoods that are along transit routes that lead to campus.
-
-## Getting Around
-
-[UCSD's transportation and parking info for graduate students page](https://transportation.ucsd.edu/commute/grad-students.html) provides information on the Triton U-Pass program for public transit access, carpools options, parking permits, cycling benefits, and more.

@@ -1,3 +1,6 @@
 [submodule "07-softengteam"]
 	path = modules/07-softengteam
 	url = https://github.com/bioinfo-ucsd/BISB-Bootcamp-2022-module-07
+[submodule "docker"]
+	path = docker
+	url = https://github.com/ucsd-ets/BNFO000.git
