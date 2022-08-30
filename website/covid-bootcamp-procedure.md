@@ -33,4 +33,4 @@ UCSD campus policy requires every individual who comes to campus to complete the
 
 If after answering the screening questions you have a yellow thumb, you will be required to mask indoors and outdoors and we will have you eat outside.
 
-If you have a red thumb, UCSD Health Testing Support Line will call you or yyou can call them (619-543-8260). Please email/discord message/text the bootcamp instructors and we will provide zoom links to participate remotely if you are feeling up to attending.
+If you have a red thumb, UCSD Health Testing Support Line will call you or you can call them (619-543-8260). Please email/discord message/text the bootcamp instructors and we will provide zoom links to participate remotely if you are feeling up to attending.
