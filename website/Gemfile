@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+gem 'faraday-retry'
+gem "webrick"
+
+group :jekyll_plugins do
+	gem 'github-pages'
+	gem 'jekyll-regex-replace', "~> 1.1.0"
+end
