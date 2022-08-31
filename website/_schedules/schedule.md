@@ -132,7 +132,7 @@ schedule:
         type: other
         start: '9:00 AM'
         end: '10:00 AM'
-        instructors: ["Kathleen Dorrestein, *Guest Instructor*, Staff Research Associate, Dorrestein Lab", "Mike Cuoco, *Bootcamp Instructor*"]
+        instructors: ["Kathleen Dorrestein, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
       - name: "Bioinformatics Problem Sets"
         fullname: "Module 4: Bioinformatics Problem Sets"
         type: mod
