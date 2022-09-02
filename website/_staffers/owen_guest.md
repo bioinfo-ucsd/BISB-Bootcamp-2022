@@ -1,7 +1,7 @@
 ---
 name: Owen Chapman
 role: Guest Instructor
-session: ["Choosing an Advisor", "Preview: Introduction to Cancer Biology"]
+session: ["Preview: Introduction to Cancer Biology"]
 email: ochapman@ucsd.edu
 advisor: ["Jill Mesirov", "Lukas Chavez"]
 title: 6th year BMI PhD student
