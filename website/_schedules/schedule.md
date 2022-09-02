@@ -96,7 +96,7 @@ schedule:
         location: MET 141 (International Student Info); MET 145 (Choosing a PhD Advisor)
         start: '9:00 AM'
         end: '10:00 AM'
-        instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Alex Wenzel, *Guest Instructor* (Choosing a PhD Advisor)"]
+        instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Owen Chapman, *Guest Instructor* (Choosing a PhD Advisor)"]
       - name: "Intro to Statistics"
         fullname: "Module 3: Introduction to Statistical Methods for Bioinformatics"
         type: mod
