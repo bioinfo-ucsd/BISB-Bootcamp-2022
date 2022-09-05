@@ -1,0 +1,50 @@
+---
+title: "Reproducible Bioinformatics"
+subtitle: "BISB Bootcamp<br>September 16, 2022"
+author: "Arya Massarat and Mike Cuoco"
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: true
+---
+
+##
+
+![](./repro-crisis-pie.png){.absolute top=0, bottom=0, left=200, right=200}
+
+::: footer
+Baker 2016 “1,500 Scientists Lift the Lid on Reproducibility.” *Nature News* 
+:::
+
+##
+
+![](./repro-fails.png){.absolute top=0, bottom=0, left=200, right=200}
+
+::: footer
+Baker 2016 “1,500 Scientists Lift the Lid on Reproducibility.” *Nature News* 
+:::
+
+##
+
+![](./repro-factors.png){.absolute top=0, bottom=0, left=200, right=200}
+
+::: footer
+Baker 2016 “1,500 Scientists Lift the Lid on Reproducibility.” *Nature News* 
+:::
+
+## What is reproducibility? {.smaller}
+
+The U.S. National Science Foundation (NSF) subcommittee on replicability defines **reproducibility** as:
+
+>the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.
+
+::: {.fragment}
+>That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results.... 
+:::
+::: {.fragment}
+>Reproducibility is a minimum necessary condition for a finding to be believable and informative.
+:::
+
+::: footer
+Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. <br> “What Does Research Reproducibility Mean?” *Science Translational Medicine*
+:::
