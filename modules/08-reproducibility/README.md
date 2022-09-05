@@ -6,7 +6,11 @@
     conda create -n quarto -c conda-forge quarto 
     ```
 
-2. Make your edits to `slides.qmd`. See [Quarto: Getting Started](https://quarto.org/docs/get-started/) on how to use Quarto, including editor configurations. See [Quarto: Revealjs Options](https://quarto.org/docs/presentations/revealjs/) on how to edit the slides in Quarto using the Revealjs backend.
+2. Make your edits to `slides.qmd`.
+
+    See [Quarto: Getting Started](https://quarto.org/docs/get-started/) on how to use Quarto, including editor configurations.
+
+    See [Quarto: Revealjs](https://quarto.org/docs/presentations/revealjs/) on how to edit the slides in Quarto using the Revealjs backend.
 
 3. Run the following to build and view the slides in a web browser.
 
