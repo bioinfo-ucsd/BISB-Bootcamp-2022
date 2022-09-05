@@ -1,7 +1,8 @@
 ---
 title: "Reproducible Bioinformatics"
-subtitle: "BISB Bootcamp<br>September 16, 2022"
+subtitle: "September 16, 2022"
 author: "Arya Massarat and Mike Cuoco"
+institute: "UC San Diego BISB Bootcamp"
 format: 
   revealjs:
     slide-number: true
@@ -34,17 +35,16 @@ Baker 2016 “1,500 Scientists Lift the Lid on Reproducibility.” *Nature News*
 
 ## What is reproducibility? {.smaller}
 
-The U.S. National Science Foundation (NSF) subcommittee on replicability defines **reproducibility** as:
+The U.S. National Science Foundation (NSF) subcommittee on replicability defines **reproducibility** as 
 
->the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.
+<blockquote>"the ability of a researcher to duplicate the results of a prior study using the **same materials** as were used by the original investigator.<span class="fragment">  That is, a second researcher might use the **same raw data** to build the **same analysis files** and implement the **same statistical analysis** in an attempt to yield the **same results**..."</span></blockquote>
 
-::: {.fragment}
->That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results.... 
-:::
-::: {.fragment}
->Reproducibility is a minimum necessary condition for a finding to be believable and informative.
-:::
+<span class="fragment">This is distinct from **replicability**, defined by the NSF as</span>
+
+<blockquote class="fragment">"the ability of a researcher to duplicate the results of a prior study if the same procedures are followed but **new data are collected**."</blockquote>
+
+<span class="fragment">While replicability is important,</span> <blockquote class="fragment" style="color:blue">**Reproducibility** is a minimum necessary condition for a finding to be believable and informative.</blockquote>
 
 ::: footer
-Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. <br> “What Does Research Reproducibility Mean?” *Science Translational Medicine*
+Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016.  “What Does Research Reproducibility Mean?” *Science Translational Medicine*
 :::
