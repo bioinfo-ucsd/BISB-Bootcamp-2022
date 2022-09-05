@@ -9,7 +9,9 @@ data/rna_seq.bam data/rna_seq.bam.bai: data ref/hg19.fa
 	aws s3 cp --no-sign-request s3://gdc-ccle-2-open/80050160-5bac-483d-a4b0-c7497e9ecd8c/G27493.SK-BR-3.2.bam.bai data/rna_seq.bam.bai
 
 data/wgs_illumina.bam: data
-	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > data/wgs_illumina.bam
+	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > data/tmp.bam
+	export TMP_DIR=$$(mktemp -d) && \
+	picard FixMateInformation -I data/tmp.bam -O data/wgs_illumina.bam
 
 data/wgs_ont.bam: data
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/skbr3.ont.sort.bam > data/wgs_ont.bam
@@ -25,15 +27,15 @@ ref/hs37d5.fa: ref
 
 data/wes_illumina.bam: ref/hs37d5.fa data/wgs_illumina.bam
 	# download panel and convert contigs from hg19 to hs37d5
-	wget -O- -q --show-progress https://sfvideo.blob.core.windows.net/sitefinity/docs/default-source/supplementary-product-info/xgen-exome-hyb-panel-v2-targets-hg19.bed | \ 
+	wget -O- -q --show-progress https://sfvideo.blob.core.windows.net/sitefinity/docs/default-source/supplementary-product-info/xgen-exome-hyb-panel-v2-targets-hg19.bed | \
 		sed s,chr,, | \
 		perl -pe 's/[^\s_]+_([^\s_]+)_random/$1.1/' | \
 		tr "gl" "GL" > ref/exome_panel.bed
 
 	# extract reads in the panel intervals
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
-	picard BedtoIntervalList -I ref/exome_panel.bed -O ref/exome_panel.interval_list -SD ref/hs37d5.dict
-	picard FilterSamReads -I data/wgs_illumina.bam -O data/wes_illumina.bam -INTERVAL_LIST ref/exome_panel.interval_list -FILTER includePairedIntervals
+	picard BedToIntervalList -I ref/exome_panel.bed -O ref/exome_panel.interval_list -SD ref/hs37d5.dict
+	picard FilterSamReads -I data/wgs_illumina.bam -O data/wes_illumina.bam --INTERVAL_LIST ref/exome_panel.interval_list --FILTER includePairedIntervals
 
 # TODO: run samtofastq on the bam files
 # TODO: transript quantification for RNA-seq (download)
