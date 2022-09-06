@@ -1,5 +1,5 @@
 
-all: data/wes_illumina.bam data/wgs_ont.bam data/wgs_pacbio.bam data/rna_seq.bam data/rna_seq.bam.bai
+all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz data/wes_illumina_mutect.vcf.gz data/wgs_illumina_mutect.vcf.gz data/wgs_illumina_manta.vcf.gz data/wgs_pacbio_sniffles.vcf.gz data/wgs_ont_sniffles.vcf.gz
 
 data ref tmp: 
 	mkdir -p $@
@@ -29,7 +29,7 @@ data/wgs_ont.bam: data
 data/wgs_pacbio.bam: data
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/reads_lr_skbr3.fa_ngmlr-0.2.3_mapped.bam > data/wgs_pacbio.bam
 
-# subset WGS bam to generate a WES bam
+# subset WGS bam over exome intervals to generate a WES bam
 data/wes_illumina.bam: ref/hs37d5.fa data/wgs_illumina.bam
 	# download panel and convert contigs from hg19 to hs37d5
 	wget -O- -q --show-progress https://sfvideo.blob.core.windows.net/sitefinity/docs/default-source/supplementary-product-info/xgen-exome-hyb-panel-v2-targets-hg19.bed | \
@@ -42,9 +42,15 @@ data/wes_illumina.bam: ref/hs37d5.fa data/wgs_illumina.bam
 	picard BedToIntervalList -I ref/exome_panel.bed -O ref/exome_panel.interval_list -SD ref/hs37d5.dict
 	picard FilterSamReads -I data/wgs_illumina.bam -O data/wes_illumina.bam --INTERVAL_LIST ref/exome_panel.interval_list --FILTER includePairedIntervals
 
-# make a fastq file from the WGS bam
-data/wgs_illumina.fastq: data/wgs_illumina.bam
-	picard SamToFastq -I data/wgs_illumina.bam -F data/wgs_illumina.fastq
+# make fastq files from subsampling the WGS bam
+data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz: data/wgs_illumina.bam
+	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq -1 data/wgs_illumina_R1.fastq.gz -2 data/wgs_illumina_R2.fastq.gz
+
+data/wgs_ont.fastq.gz: data/wgs_ont.bam
+	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq > data/wgs_ont.fastq.gz
+
+data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
+	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq > data/wgs_pacbio.fastq.gz
 
 # Call variants from illumina data using Mutect2
 data/wgs_illumina_mutect.vcf.gz: ref/hs37d5.fa
@@ -65,5 +71,3 @@ data/wgs_ont_sniffles.vcf.gz:
 
 clean: 
 	rm -rf tmp
-
-# TODO: run samtofastq on the bam files
