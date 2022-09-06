@@ -18,7 +18,7 @@ data/rna_seq.bam data/rna_seq_genes_tpm.csv: data tmp
 	grep "ACH-000017" tmp/CCLE_expression.csv >> data/rna_seq_genes_tpm.csv
 
 # download WGS data from Schatz lab website
-data/wgs_illumina.bam: data
+data/wgs_illumina.bam: data tmp
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > tmp/wgs_illumina.bam
 	picard FixMateInformation -I tmp/wgs_illumina.bam -O data/wgs_illumina.bam --TMP_DIR tmp
 	rm -f tmp/wgs_illumina.bam
@@ -53,10 +53,10 @@ data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
 	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq > data/wgs_pacbio.fastq.gz
 
 # Call variants from illumina data using Mutect2
-data/wgs_illumina_mutect.vcf.gz: ref/hs37d5.fa
+data/wgs_illumina_mutect.vcf.gz: data/wgs_illumina.bam ref/hs37d5.fa
 	gatk Mutect2 -R ref/hs37d5.fa -I data/wgs_illumina.bam -O data/wgs_illumina_mutect.vcf.gz
 
-data/wes_illumina_mutect.vcf.gz: ref/hs37d5.fa
+data/wes_illumina_mutect.vcf.gz: data/wes_illumina.bam ref/hs37d5.fa
 	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O data/wes_illumina_mutect.vcf.gz
 
 # Download structural variant calls
