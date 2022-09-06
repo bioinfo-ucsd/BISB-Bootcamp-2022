@@ -1,7 +1,5 @@
 # Module 2: Introduction to Sequencing
 
-
-
 ## Setup
 
 Automated setup using GNU make, see [`Makefile`](./Makefile). To run the setup:
@@ -21,6 +19,7 @@ This will download and create the following files for the [SK-BR-3 cell line](ht
 |   |-- exome_panel.bed
 |   |-- exome_panel.interval_list
 |   |-- hs37d5.fa
+|   |-- hs37d5.fa.fai
 |   |-- hs37d5.dict
 |-- data
 |   |-- wes_illumina.bam
