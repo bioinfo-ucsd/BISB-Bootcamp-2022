@@ -10,6 +10,9 @@ ref/hs37d5.fa ref/hs37d5.fa.fai ref/hs37d5.dict: ref
 	samtools faidx ref/hs37d5.fa
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
 
+ref/funcotator_dataSources:
+	wget -O- -q --show-progress https://data.broadinstitute.org/funcotator/datasources/funcotator_dataSources.v1.7.20200521s.tar.gz | tar -xz -C ref/funcotator_dataSources
+
 # download SK-BR-3 RNA-seq bam files from AWS bucket (https://aws.amazon.com/marketplace/pp/prodview-4wmr6pg5beutw)
 # download RNA-seq expression values from the Cancer Depedency Map (https://depmap.org/portal/download/all/)
 # subset to just our sample
@@ -22,8 +25,7 @@ data/rna_seq.bam data/rna_seq_genes_tpm.csv: data tmp
 # download WGS data from Schatz lab website
 data/wgs_illumina.bam: data tmp
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > tmp/wgs_illumina.bam
-	picard FixMateInformation -I tmp/wgs_illumina1.bam -O tmp/wgs_illumina2.bam --TMP_DIR tmp
- 	picard AddOrReplaceReadGroups -I tmp/wgs_illumina2 -O data/wgs_illumina.bam --TMP_DIR tmp --RGSM SK-BR-3
+	samtools sort tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate - data/wgs_illumina.bam
 	rm -f tmp/*
 
 data/wgs_ont.bam: data
@@ -54,7 +56,7 @@ data/wgs_ont.fastq.gz: data/wgs_ont.bam
 data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
 	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq - > data/wgs_pacbio.fastq.gz
 
-# Call variants from illumina data using Mutect2
+# Call tumor variants from illumina data using Mutect2
 data/wgs_illumina_mutect.vcf.gz: data/wgs_illumina.bam ref/hs37d5.fa
 	gatk Mutect2 -R ref/hs37d5.fa -I data/wgs_illumina.bam -O data/wgs_illumina_mutect.vcf.gz
 
