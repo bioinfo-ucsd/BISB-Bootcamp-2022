@@ -173,7 +173,7 @@ seminars:
     keywords: behavioral genetics, psychiatric genetics, substance abuse, impulsivity, human genetics, rat genetics, mouse genetics
     website: https://palmerlab.org
 - date: "2022-09-08"
-  flyer:
+  flyer: 09-08-2022_flyer.png
   talks:
   - speaker: Vikas Bansal, PhD
     speaker_title: Associate Professor, Division of Genome Information Sciences (Pediatrics), School of Medicine

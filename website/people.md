@@ -63,7 +63,7 @@ Guest instructors lead modules on specialized topics.
 {% assign fellows = site.staffers | where: 'role', 'Fellowship Panel' %}
 {% if fellows.size != 0 %}
 
-## Fellowship Panelists
+## Fellowships Panelists
 
 These students will sit on a panel for Q&A during the Fellowships session
 
@@ -76,7 +76,7 @@ These students will sit on a panel for Q&A during the Fellowships session
 {% assign interns = site.staffers | where: 'role', 'Internship Panel' %}
 {% if interns.size != 0 %}
 
-## Internship Panelists
+## Internships Panelists
 
 These students will sit on a panel for Q&A during the Internships session
 
