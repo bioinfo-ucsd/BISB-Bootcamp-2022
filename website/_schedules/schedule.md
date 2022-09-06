@@ -132,7 +132,7 @@ schedule:
         type: other
         start: '9:00 AM'
         end: '10:00 AM'
-        instructors: ["Kathleen Dorrestein, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
+        instructors: ["Kathleen Dorrestein, *Guest Instructor*, Staff Research Associate, Dorrestein Lab", "Mike Cuoco, *Bootcamp Instructor*"]
       - name: "Bioinformatics Problem Sets"
         fullname: "Module 4: Bioinformatics Problem Sets"
         type: mod
@@ -167,7 +167,7 @@ schedule:
         fullname: "Getting Paid 2: Predoctoral Internships"
         start: '4:00 PM'
         end: '5:00 PM'
-        instructors: "Nathan Lewis, *Guest Instructor*, Associate Professor of Pediatrics and Bioengineering"
+        instructors: "Jocelyn Bruand, *Guest Instructor*, BISB Alumni, Senior Staff Scientist at Inscripta"
         
   - name: Thursday 
     date: '2022-09-15'
