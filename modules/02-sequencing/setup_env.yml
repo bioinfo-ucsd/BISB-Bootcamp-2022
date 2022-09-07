@@ -1,4 +1,4 @@
-name: ngs_data_prep
+name: 02-sequencing-setup
 channels:
   - conda-forge
   - bioconda
