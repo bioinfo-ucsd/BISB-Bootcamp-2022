@@ -12,7 +12,7 @@ dependencies:
   - bioconda::gatk4
   - bioconda::fastqc
   - conda-forge::make
-  - conda-forge::pigz
   - conda-forge::jupyterlab
   - conda-forge::ipykernel
   - conda-forge::nbconvert
+  - bioconda::jbrowse2
