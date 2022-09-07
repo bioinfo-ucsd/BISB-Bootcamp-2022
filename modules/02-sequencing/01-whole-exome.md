@@ -1,15 +1,15 @@
-# Activity 1: Short-read DNA sequencing analysis
+# Activity 1: Whole exome sequencing (WES) analysis
 
-In this activity, we will analyze whole-exome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033) to discover cancer mutations. This data was generated using paired-end Illumina sequencing, as part of the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle/). 
+In this activity, we will analyze whole-exome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033) to discover cancer mutations. This data was generated using paired-end Illumina sequencing, as part of the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle/).
 
-Starting from the raw sequencing reads, we will perform the following steps:
+We will perform the following steps:
 
-1. Quality control of the sequencing reads
-2. Genome alignment with BWA-MEM 
-3. Small variant calling using Mutect2
-4. Functional annotation of the variants using Funcotator
+1. [Quality control of the sequencing reads](#1-quality-control-of-the-sequencing-reads)
+2. [Genome alignment with `bwa mem`](#2-genome-alignment-with-bwa-mem)
+3. [Calling small somatic variants using `Mutect2`](#3-calling-small-somatic-variants-using-mutect2)
+4. [Functional annotation of the variants using `Funcotator`](#4-functional-annotation-of-the-variants-using-funcotator)
 
-## 1. Quality control of the sequencing reads 
+## 1. Quality control of the sequencing reads
 
 You can find the FASTQ files containing our whole-exome sequencing reads in the directory shown below
 
@@ -19,7 +19,7 @@ data/
 |-- wes_illumina_R2.fastq.gz
 ```
 
-Let's take a look at the first few lines of the first file. Since the file is compressed, we will first decompress it using `zcat` and then pipe the output to `head` to display the first 10 lines. Do you see the canonical four lines of a fastq file? Run the following command and compare the output with the image below. 
+Let's take a look at the first few lines of the first file. Since the file is compressed, we will first decompress it using `zcat` and then pipe the output to `head` to display the first 10 lines. Do you see the canonical four lines of a fastq file? Run the following command and compare the output with the image below.
 
 ```bash
 zcat data/wes_illumina_R1.fastq.gz | head
@@ -27,7 +27,7 @@ zcat data/wes_illumina_R1.fastq.gz | head
 
 ![](./img/fastq_format.jpg)
 
-Now let's use [`fastqc`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to perform a quality check of the raw sequencing data. FASTQC will generate a report in HTML format, which you can open in your browser. Note that we downsampled these data to 1% of the original to speed up the analysis. 
+Now let's use [`fastqc`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to perform a quality check of the raw sequencing data. FASTQC will generate a report in HTML format, which you can open in your browser. Note that we downsampled these data to 1% of the original to speed up the analysis.
 
 ```bash
 # run fastq on each file
@@ -41,7 +41,7 @@ Take a look and the report and answer the following questions:
 2. What is the quality score distribution? Are they the same for both files?
 3. What is the relationship between quality score and cycle number?
 
-You can also compare your report to example reports for [Good Illumina data](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) and [Bad Illumina data](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html). 
+You can also compare your report to examples for [Good Illumina data](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) and [Bad Illumina data](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html).
 
 ## 2. Genome alignment with `bwa mem`
 
