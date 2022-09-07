@@ -1,6 +1,6 @@
-# Activity 1: Whole exome sequencing (WES) analysis
+# Activity 1: Whole-Exome Sequencing (WES) Analysis
 
-In this activity, we will analyze whole-exome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033) to discover cancer mutations. This data was generated using paired-end Illumina sequencing, as part of the [Cancer Cell Line Encyclopedia (CCLE)](https://sites.broadinstitute.org/ccle/).
+In this activity, we will analyze whole-exome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033) to discover cancer mutations. This data was generated using paired-end Illumina sequencing.
 
 We will perform the following steps:
 
@@ -9,14 +9,16 @@ We will perform the following steps:
 3. [Calling small somatic variants using `Mutect2`](#3-calling-small-somatic-variants-using-mutect2)
 4. [Functional annotation of the variants using `Funcotator`](#4-functional-annotation-of-the-variants-using-funcotator)
 
+Before beginning ensure you are in the `~/bootcamp-02-sequencing/01-whole-exome` directory
+
 ## 1. Quality control of the sequencing reads
 
-You can find the FASTQ files containing our whole-exome sequencing reads in the directory shown below
+You can find the FASTQ files containing our WES reads in the directory shown below
 
 ```bash
 data/
-|-- wes_illumina_R1.fastq.gz
-|-- wes_illumina_R2.fastq.gz
+├── wes_illumina_R1.fastq.gz
+└── wes_illumina_R2.fastq.gz
 ```
 
 Let's take a look at the first few lines of the first file. Since the file is compressed, we will first decompress it using `zcat` and then pipe the output to `head` to display the first 10 lines. Do you see the canonical four lines of a fastq file? Run the following command and compare the output with the image below.
@@ -45,7 +47,7 @@ You can also compare your report to examples for [Good Illumina data](https://ww
 
 ## 2. Genome alignment with `bwa mem`
 
-To align the reads to the reference genome, we will use the [Burrows-Wheeler Aligner (BWA) Maximal Exact Match (MEM)](http://bio-bwa.sourceforge.net/) algorithm. BWA-MEM is a fast and accurate aligner for short reads and is the current gold standard for Illumina short-read genome alignment, although it will likely soon be replaced by Illumina's DRAGMAP method (you can read more about DRAGMAP vs BWA-MEM [here](https://gatk.broadinstitute.org/hc/en-us/articles/4410953761563-Introducing-DRAGMAP-the-new-genome-mapper-in-DRAGEN-GATK)). Sequence and genome alignment is a heavily studied computational problem and will be covered in Pavel Pevzer's course "Bioinformatics II (BENG 202/CSE 282). Introduction to Bioinformatics Algorithms".
+To align the reads to the reference genome, we will use the [Burrows-Wheeler Aligner (BWA) Maximal Exact Match (MEM)](http://bio-bwa.sourceforge.net/) algorithm. BWA-MEM is a fast and accurate aligner for short reads and is the current gold standard for Illumina short-read genome alignment, although it will likely soon be replaced by Illumina's DRAGMAP method (you can read more about DRAGMAP vs BWA-MEM benchmarks [here](https://gatk.broadinstitute.org/hc/en-us/articles/4410953761563-Introducing-DRAGMAP-the-new-genome-mapper-in-DRAGEN-GATK)). Sequence and genome alignment is a heavily studied computational problem and will be covered in Pavel Pevzer's course "Bioinformatics II (BENG 202/CSE 282). Introduction to Bioinformatics Algorithms".
 
 <!-- Add a note about reference genomes -->
 
@@ -63,12 +65,15 @@ samtools view data/wes_illumina.bam | head
 
 ![](./img/sam_format.jpg)
 
-Now let's look at the alignment coverage of the reference genome using [`samtools coverage`](http://www.htslib.org/doc/samtools-coverage.html) and some alignment quality statistics using [`samtools flagstat`](http://www.htslib.org/doc/samtools-flagstat.html). These files are *not downsampled*, so these commands will take a few minutes to compute and display their respective metrics. 
+Now let's look at the alignment coverage of the reference genome using [`samtools coverage`](http://www.htslib.org/doc/samtools-coverage.html) and some alignment quality statistics using [`samtools flagstat`](http://www.htslib.org/doc/samtools-flagstat.html). These files are *not downsampled*, so these commands will take a few minutes to compute and display their respective metrics.
 
 ```bash
 samtools coverage data/wes_illumina.bam
+samtools idxstat data/wes_illumina.bam
 samtools flagstat data/wes_illumina.bam
 ```
+
+<!-- TODO: interpret the output here -->
 
 ## 3. Calling small somatic variants using `Mutect2`
 
@@ -93,6 +98,8 @@ Now let's look at the variant statistics using [`bcftools stats`](http://samtool
 ```bash
 bcftools stats data/wes_illumina_mutect.vcf.gz 
 ```
+
+<!-- TODO: add interpretation -->
 
 ## 4. Functional annotation of the variants using `Funcotator`
 
