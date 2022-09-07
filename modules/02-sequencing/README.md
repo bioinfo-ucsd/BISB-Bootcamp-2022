@@ -14,4 +14,5 @@ bootcamp-02-sequencing
 ├── 01-whole-exome # activity 1
 ├── 02-whole-genome # activity 2
 ├── 03-rna-seq # activity 3
+├── jbrowse2 # jbrowse2 installation 
 ```
