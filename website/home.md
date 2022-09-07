@@ -14,7 +14,7 @@ Welcome to the 2022 Bootcamp for incoming students to the UC San Diego Bioinform
 
 This 5-day intensive course is designed to place incoming PhD students on a path to success in their doctoral studies by conducting the following:
 
-- Introduce the doctoral program, the UC San Diego, and the greater San Diego area
+- Introduce the doctoral program, UC San Diego, and San Diego county
 - Foster community among students of the incoming cohort and with senior students
 - Convey expectations for the core curriculum and elective courses, while reviewing basic concepts
 - Showcase faculty research and guide students in preparing for their research rotations
@@ -36,7 +36,15 @@ We suggest moving to San Diego in **early September** so you have some time to s
 
 ## Onboard to UC San Diego
 
-Learn about setting up your new student accoutn, obtaining an ID card, signing up for classes, and more at [UC San Diego Onboarding](ucsd-onboarding.md).
+Learn about setting up your new student account, obtaining an ID card, signing up for classes, and more at [UC San Diego Onboarding](ucsd-onboarding.md).
+
+## Parking at UC San Diego
+
+Learn about the parking at UCSD at [Parking at UCSD](ucsd-parking.md).
+
+## COVID-19
+
+Learn about UC San Diego's COVID-19 policies and testing as well as Bootcamp's COVID-19 policies at [COVID-19 Information](covid-bootcamp-procedure.md).
 
 ## Course Instructors
 

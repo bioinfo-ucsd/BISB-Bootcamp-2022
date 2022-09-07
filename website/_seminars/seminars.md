@@ -144,6 +144,7 @@ seminars:
     website: http://renlab.sdsc.edu
 - date: "2022-08-25"
   flyer: 08-25-2022_flyer.png
+  recording: https://drive.google.com/file/d/1go-yd1Gkfq0WQMrDpj1hjmHvtLrvrlXK/view?usp=sharing
   talks:
   - speaker: Hannah Carter, PhD
     speaker_title: Associate Professor, Department of Medicine, Division of Medical Genetics
@@ -159,6 +160,7 @@ seminars:
     website: https://metallo.salk.edu
 - date: "2022-09-01"
   flyer: 09-01-2022_flyer.png
+  recording: https://drive.google.com/file/d/1mN25gFQLyb2eVy9TzrnmmAm3sqP_PV49/view?usp=sharing
   talks:
   - speaker: Gen-Sheng Feng, PhD
     speaker_title: Professor of Pathology and Molecular Biology

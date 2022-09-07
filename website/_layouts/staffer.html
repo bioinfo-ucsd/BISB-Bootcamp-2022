@@ -14,7 +14,7 @@
       {% endif %}
     </h3>
     {% if page.email %}
-      <p>Email: {{ page.email | split: "@" | first}} at ucsd.edu</p>
+      <p>Email: {{ page.email | replace: "@", " at " }}</p>
     {% endif %}
       {% if page.title %}
         {% for title in page.title %}
