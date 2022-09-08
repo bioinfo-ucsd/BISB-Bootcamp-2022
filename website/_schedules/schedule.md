@@ -161,7 +161,7 @@ schedule:
         fullname: "Getting Paid 1: Predoctoral Fellowships"
         start: '2:45 PM'
         end: '3:45 PM'
-        instructors: "Mike Cuoco, *Bootcamp Instructor*"
+        instructors: "Hannah Carter, *Guest Instructor*, Associate Professor, Department of Medicine"
       - name: "Predoctoral Internships"
         type: other
         fullname: "Getting Paid 2: Predoctoral Internships"
