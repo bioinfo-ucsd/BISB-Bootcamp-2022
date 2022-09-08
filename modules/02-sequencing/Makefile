@@ -1,5 +1,8 @@
 
-all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz data/wes_illumina_mutect.vcf.gz data/wgs_illumina_mutect.vcf.gz data/wgs_illumina_manta.vcf.gz data/wgs_pacbio_sniffles.vcf.gz data/wgs_ont_sniffles.vcf.gz ref/funcotator_dataSources
+all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
+	data/wes_illumina_mutect.vcf.gz \
+	data/wgs_illumina_manta.vcf.gz data/wgs_pacbio_sniffles.vcf.gz data/wgs_ont_sniffles.vcf.gz \
+	ref/funcotator_dataSources
 
 data ref tmp: 
 	mkdir -p $@
@@ -55,7 +58,14 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 
 # make fastq files from subsampling the WGS bam
 data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz: data/wgs_illumina.bam
-	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq - -1 data/wgs_illumina_R1.fastq.gz -2 data/wgs_illumina_R2.fastq.gz
+	samtools fastq data/wgs_illumina.bam - -1 tmp/wgs_illumina_R1.fastq.gz -2 tmp/wgs_illumina_R2.fastq.gz
+	head -n 1000000 tmp/wgs_illumina_R1.fastq.gz > data/wgs_illumina_R1.fastq.gz
+	head -n 1000000 tmp/wgs_illumina_R2.fastq.gz > data/wgs_illumina_R2.fastq.gz
+
+data/wes_illumina_R1.fastq.gz data/wes_illumina_R2.fastq.gz: data/wes_illumina.bam
+	samtools fastq data/wes_illumina.bam - -1 tmp/wes_illumina_R1.fastq.gz -2 tmp/wes_illumina_R2.fastq.gz
+	head -n 1000000 tmp/wes_illumina_R1.fastq.gz > data/wes_illumina_R1.fastq.gz
+	head -n 1000000 tmp/wes_illumina_R2.fastq.gz > data/wes_illumina_R2.fastq.gz
 
 data/wgs_ont.fastq.gz: data/wgs_ont.bam
 	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq - > $@
