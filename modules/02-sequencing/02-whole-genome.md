@@ -1,6 +1,6 @@
 # Activity 2: Whole-Genome Sequencing (WGS) Analysis
 
-In this activity, we will analyze whole-genome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033). We have datasets from Illumina, Pacific Bioscience (pacbio), and Oxford Nanopore (ont) sequencing platforms.
+In this activity, we will analyze whole-genome sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033). We have datasets from Illumina, Pacific Bioscience (pacbio), and Oxford Nanopore Technologies (ont) sequencing platforms.
 
 We will perform the following steps:
 
@@ -47,11 +47,13 @@ data/
 
 Let's take a look at the alignment quality using [`samtools`](http://www.htslib.org/doc/samtools.html) and jbrowse.
 
+<!-- TODO: explore other samtools options? Use multiqc again here? -->
+
 ```bash
 samtools flagstat data/*.bam # use wildcard to provide all files as input
 ```
 
-We can use jbrowse to visualize the alignments. First, we need to create a jbrowse configuration file.
+We can use jbrowse to visualize the alignments.
 
 <!-- TODO: add interpretation -->
 
@@ -65,3 +67,7 @@ data/
 ├── wgs_ont_sniffles.vcf.gz
 └── wgs_pacbio_sniffles.vcf.gz
 ```
+
+<!-- TODO: add jbrowser point here too -->
+<!-- TODO: add more summarizing here? -->
+<!-- TODO: look for specific example -->

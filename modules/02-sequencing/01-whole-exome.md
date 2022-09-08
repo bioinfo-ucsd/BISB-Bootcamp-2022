@@ -31,6 +31,8 @@ zcat data/wes_illumina_R1.fastq.gz | head
 
 Now let's use [`fastqc`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to perform a quality check of the raw sequencing data. FASTQC will generate a report in HTML format, which you can open in your browser. Note that we downsampled these data to 1% of the original to speed up the analysis.
 
+<!-- TODO:  add instructions for how to open html files from jupyter-->
+
 ```bash
 # run fastq on each file
 fastqc data/wes_illumina_R1.fastq.gz -o results/wes_illumina_R1.fastqc.html
@@ -39,6 +41,8 @@ fastqc data/wes_illumina_R2.fastq.gz -o results/wes_illumina_R2.fastqc.html
 
 Take a look and the report and answer the following questions:
 
+<!-- TODO: add sequencing duplication  -->
+<!-- TODO: fix questions to explicitly references FASTQC report sections -->
 1. What is the read length distribution? Are they the same for both files?
 2. What is the quality score distribution? Are they the same for both files?
 3. What is the relationship between quality score and cycle number?
@@ -49,7 +53,9 @@ You can also compare your report to examples for [Good Illumina data](https://ww
 
 To align the reads to the reference genome, we will use the [Burrows-Wheeler Aligner (BWA) Maximal Exact Match (MEM)](http://bio-bwa.sourceforge.net/) algorithm. BWA-MEM is a fast and accurate aligner for short reads and is the current gold standard for Illumina short-read genome alignment, although it will likely soon be replaced by Illumina's DRAGMAP method (you can read more about DRAGMAP vs BWA-MEM benchmarks [here](https://gatk.broadinstitute.org/hc/en-us/articles/4410953761563-Introducing-DRAGMAP-the-new-genome-mapper-in-DRAGEN-GATK)). Sequence and genome alignment is a heavily studied computational problem and will be covered in Pavel Pevzer's course "Bioinformatics II (BENG 202/CSE 282). Introduction to Bioinformatics Algorithms".
 
-<!-- Add a note about reference genomes -->
+
+<!-- TODO: add command for bwa mem, but dont have them run it -->
+<!-- TODO: add a note about reference genomes. have them peek at the fasta file -->
 
 To save time, we have already run `bwa mem` and saved the alignments in the binary alignment map (BAM) format. You can find the resultant BAM file at `data/wes_illumina.bam`.
 
@@ -65,7 +71,11 @@ samtools view data/wes_illumina.bam | head
 
 ![](./img/sam_format.jpg)
 
+<!-- TODO: add explain SAM flags website https://broadinstitute.github.io/picard/explain-flags.html -->
+
 Now let's look at the alignment coverage of the reference genome using [`samtools coverage`](http://www.htslib.org/doc/samtools-coverage.html) and some alignment quality statistics using [`samtools flagstat`](http://www.htslib.org/doc/samtools-flagstat.html). These files are *not downsampled*, so these commands will take a few minutes to compute and display their respective metrics.
+
+<!-- TODO: maybe remove flagstat, try histogram for samtools coverage -m/--histogram -->
 
 ```bash
 samtools coverage data/wes_illumina.bam
@@ -75,13 +85,15 @@ samtools flagstat data/wes_illumina.bam
 
 <!-- TODO: interpret the output here -->
 
+<!-- TODO: view in jbrowser, look at one or two genes of interest (HER2,) -->
+
 ## 3. Calling small somatic variants using `Mutect2`
 
 To determine which genes are mutated in this cell line, we will perform **variant calling**. By examining the differences between the reference genome and the aligned reads, we can identify regions of the genome that are different between the reference and the sample and call these regions as variants. [Mutect2](https://gatk.broadinstitute.org/hc/en-us/articles/360037225632-Mutect2) is a somatic short variant caller that is part of the [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us), designed to call short nucleotide variants (SNVs) and insertions/deletions (indels). Like sequencing alignment, variant calling is a heavily studied computational problem and is covered in Melissa Gymrek's course "CSE 284. Personal Genomics for Bioinformaticians".
 
 To save time, we have already run `Mutect2` on our whole-exome sequencing BAM file. You can find the resultant compressed VCF file at `data/wes_illumina_mutect.vcf.gz`.
 
-Let's look at the top of the VCF file. We will use [`bcftools`](http://samtools.github.io/bcftools/bcftools.html) to automatically decompress and display the VCF. Do you see the canonical features of a VCF file? Run the following commands check the output with the image below. 
+Let's look at the top of the VCF file. We will use [`bcftools`](http://samtools.github.io/bcftools/bcftools.html) to automatically decompress and display the VCF. Do you see the canonical features of a VCF file? Run the following commands check the output with the image below.
 
 ```bash
 # check the file header
@@ -100,6 +112,7 @@ bcftools stats data/wes_illumina_mutect.vcf.gz
 ```
 
 <!-- TODO: add interpretation -->
+<!-- TODO: add jbrowse -->
 
 ## 4. Functional annotation of the variants using `Funcotator`
 
@@ -118,3 +131,6 @@ gatk Funcotator \
      --output wes_illumina_mutect.funcotated.vcf \
      --output-file-format VCF
 ```
+
+<!-- TODO: add interpretation, look through output for certain genes -->
+<!-- TODO: compare to cosmic? -->
