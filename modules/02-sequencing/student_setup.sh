@@ -11,6 +11,7 @@ set -euo pipefail
 	exit
  fi
 
+cd $HOME
 source_dir=$(dirname "$0")
 dest_dir="$HOME/bootcamp-02-sequencing"
 
