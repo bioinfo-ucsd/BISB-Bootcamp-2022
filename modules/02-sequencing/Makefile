@@ -27,7 +27,7 @@ data/rna_seq_genes_tpm.csv: data tmp
 # download WGS data from Schatz lab website
 data/wgs_illumina.bam data/wgs_illumina.bam.bai: data tmp
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > tmp/wgs_illumina.bam
-	samtools sort -@ 8 -n tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate - tmp/wgs_illumina.fixmate.bam
+	samtools sort -@ 8 -n tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate -m - tmp/wgs_illumina.fixmate.bam
 	samtools sort -@ 8 tmp/wgs_illumina.fixmate.bam | samtools markdup - data/wgs_illumina.bam
 	samtools index data/wgs_illumina.bam
 	rm -f tmp/*
