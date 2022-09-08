@@ -5,11 +5,10 @@
 # exit if any non-zero, exit if undefined var
 set -euo pipefail
 
- if ! command -v jbrowse &> /dev/null
- then
+if ! command -v jbrowse &> /dev/nulll; then
 	echo "jbrowse could not be found, please activate the bootcamp conda environment"
 	exit
- fi
+fi
 
 cd $HOME
 source_dir=$(dirname "$0")
@@ -40,4 +39,5 @@ ln -s $source_dir/data/rna* $this_dir/
 ln -s $source_dir/ref $this_dir/ref
 
 cd $dest_dir
+echo "creating $dest_dir/jbrowse2..."
 jbrowse create jbrowse2
