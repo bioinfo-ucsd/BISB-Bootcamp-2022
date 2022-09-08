@@ -13,7 +13,7 @@ ref/hs37d5.fa ref/hs37d5.fa.fai ref/hs37d5.dict: ref
 	samtools faidx ref/hs37d5.fa
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
 
-ref/funcotator_dataSources:
+ref/funcotator_dataSources: ref
 	wget -O- -q --show-progress https://data.broadinstitute.org/funcotator/datasources/funcotator_dataSources.v1.7.20200521s.tar.gz | tar -xz -C ref/funcotator_dataSources
 
 # download SK-BR-3 RNA-seq bam files from AWS bucket (https://aws.amazon.com/marketplace/pp/prodview-4wmr6pg5beutw)
@@ -33,7 +33,6 @@ data/wgs_illumina.bam data/wgs_illumina.bam.bai: data tmp
 	samtools sort -@ 8 -n tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate -m - tmp/wgs_illumina.fixmate.bam
 	samtools sort -@ 8 tmp/wgs_illumina.fixmate.bam | samtools markdup - data/wgs_illumina.bam
 	samtools index data/wgs_illumina.bam
-	rm -f tmp/*
 
 data/wgs_ont.bam data/wgs_ont.bam.bai: data
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/skbr3.ont.sort.bam > data/wgs_ont.bam
