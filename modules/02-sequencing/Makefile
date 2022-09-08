@@ -6,7 +6,7 @@ data ref tmp:
 
 # download reference genome
 ref/hs37d5.fa ref/hs37d5.fa.fai ref/hs37d5.dict: ref
-	wget -O- -q --show-progress http://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz | gzip -dc > ref/hs37d5.fa.gz
+	-wget -O- -q --show-progress http://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz | gzip -dc > ref/hs37d5.fa.gz 2> /dev/null
 	samtools faidx ref/hs37d5.fa
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
 
