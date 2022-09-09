@@ -42,7 +42,8 @@ data/wgs_ont.bam data/wgs_ont.bam.bai: data
 	samtools index data/wgs_ont.bam
 
 data/wgs_pacbio.bam data/wgs_pacbio.bam.bai: data
-	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/reads_lr_skbr3.fa_ngmlr-0.2.3_mapped.bam > data/wgs_pacbio.bam
+	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/reads_lr_skbr3.fa_ngmlr-0.2.3_mapped.bam > tmp/wgs_pacbio.bam
+	samtools sort -@ $(threads) tmp/wgs_pacbio.bam > data/wgs_pacbio.bam
 	samtools index data/wgs_pacbio.bam
 
 # subset WGS bam over exome intervals to generate a WES bam
@@ -60,8 +61,8 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 
 # make fastq files from subsampling the WGS bam
 data/%_illumina_R1.fastq.gz data/%_illumina_R2.fastq.gz: data/%_illumina.bam
-	samtools fastq -@ $(threads) $< -1 data/%_illumina_R1.fastq.gz -2 data/%_illumina_R2.fastq.gz
-
+	samtools fastq -@ $(threads) -1 data/$*_illumina_R1.fastq.gz -2 data/$*_illumina_R2.fastq.gz -0 /dev/null -s /dev/null -n $<
+	
 data/wgs_ont.fastq.gz: data/wgs_ont.bam
 	samtools fastq -@ $(threads) data/wgs_ont.bam > data/wgs_ont.fastq.gz
 
@@ -72,11 +73,8 @@ data/%.fastqc.html: data/%.fastq.gz
 	fastqc -t $(threads) -o data $<
 
 # Call tumor variants from illumina data using Mutect2
-data/wgs_illumina_mutect.vcf.gz: data/wgs_illumina.bam ref/hs37d5.fa
-	gatk Mutect2 -R ref/hs37d5.fa -I data/wgs_illumina.bam -O $@
-
-data/wes_illumina_mutect.vcf.gz: data/wes_illumina.bam ref/hs37d5.fa
-	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O $@
+data/%_illumina_mutect.vcf.gz: data/%_illumina.bam ref/hs37d5.fa
+	gatk Mutect2 -R ref/hs37d5.fa -I data/$*_illumina.bam -O $@
 
 # Download structural variant calls
 data/wgs_illumina_manta.vcf.gz:
