@@ -1,5 +1,9 @@
 #!/bin/bash
 # usage: bash -i env_setup.sh
+
+# # faster installation of other packages through mamba --> do in base environment
+# conda install -y -c conda-forge mamba 
+
 conda create -y -n bootcamp_local #python=3.9 ipython # specify python version bc of 3.10 issues w mamba
 conda activate bootcamp_local
 
@@ -13,9 +17,6 @@ fi
 
 # channels if needed
 # conda config --add channels <channel_name>
-
-# faster installation of other packages through mamba
-conda install -y -c conda-forge mamba
 
 # install a common python package
 mamba install -y -c anaconda pandas
