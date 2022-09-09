@@ -1,3 +1,4 @@
+threads := 8
 
 all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
 	data/wes_illumina_mutect.vcf.gz \
@@ -6,12 +7,14 @@ all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fa
 
 data ref tmp: 
 	mkdir -p $@
+	sleep 2
 
 # download reference genome
 ref/hs37d5.fa ref/hs37d5.fa.fai ref/hs37d5.dict: ref
 	-wget -O- -q --show-progress http://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz | gzip -dc > ref/hs37d5.fa.gz 2> /dev/null
 	samtools faidx ref/hs37d5.fa
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
+	sleep 2
 
 ref/funcotator_dataSources: ref
 	wget -O- -q --show-progress https://data.broadinstitute.org/funcotator/datasources/funcotator_dataSources.v1.7.20200521s.tar.gz | tar -xz -C ref/funcotator_dataSources
@@ -30,8 +33,8 @@ data/rna_seq_genes_tpm.csv: data tmp
 # download WGS data from Schatz lab website
 data/wgs_illumina.bam data/wgs_illumina.bam.bai: data tmp
 	wget -O- -q --show-progress http://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam > tmp/wgs_illumina.bam
-	samtools sort -@ 8 -n tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate -m - tmp/wgs_illumina.fixmate.bam
-	samtools sort -@ 8 tmp/wgs_illumina.fixmate.bam | samtools markdup - data/wgs_illumina.bam
+	samtools sort -@ $(threads) -n tmp/wgs_illumina.bam | samtools addreplacerg -r '@RG\tID:SK-BR-3\tSM:SK-BR-3' - | samtools fixmate -m - tmp/wgs_illumina.fixmate.bam
+	samtools sort -@ $(threads) tmp/wgs_illumina.fixmate.bam | samtools markdup - data/wgs_illumina.bam
 	samtools index data/wgs_illumina.bam
 
 data/wgs_ont.bam data/wgs_ont.bam.bai: data
@@ -56,21 +59,17 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 	samtools index data/wes_illumina.bam
 
 # make fastq files from subsampling the WGS bam
-data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz: data/wgs_illumina.bam
-	samtools fastq data/wgs_illumina.bam - -1 tmp/wgs_illumina_R1.fastq.gz -2 tmp/wgs_illumina_R2.fastq.gz
-	head -n 1000000 tmp/wgs_illumina_R1.fastq.gz > data/wgs_illumina_R1.fastq.gz
-	head -n 1000000 tmp/wgs_illumina_R2.fastq.gz > data/wgs_illumina_R2.fastq.gz
-
-data/wes_illumina_R1.fastq.gz data/wes_illumina_R2.fastq.gz: data/wes_illumina.bam
-	samtools fastq data/wes_illumina.bam - -1 tmp/wes_illumina_R1.fastq.gz -2 tmp/wes_illumina_R2.fastq.gz
-	head -n 1000000 tmp/wes_illumina_R1.fastq.gz > data/wes_illumina_R1.fastq.gz
-	head -n 1000000 tmp/wes_illumina_R2.fastq.gz > data/wes_illumina_R2.fastq.gz
+data/%_illumina_R1.fastq.gz data/%_illumina_R2.fastq.gz: data/%_illumina.bam
+	samtools fastq -@ $(threads) $< -1 data/%_illumina_R1.fastq.gz -2 data/%_illumina_R2.fastq.gz
 
 data/wgs_ont.fastq.gz: data/wgs_ont.bam
-	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq - > $@
+	samtools fastq -@ $(threads) data/wgs_ont.bam > data/wgs_ont.fastq.gz
 
 data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
-	samtools view --subsample 0.01 data/wgs_illumina.bam | samtools fastq - > $@
+	samtools fastq -@ $(threads) data/wgs_pacbio.bam > data/wgs_pacbio.fastq.gz
+
+data/%.fastqc.html: data/%.fastq.gz
+	fastqc -t $(threads) -o data $<
 
 # Call tumor variants from illumina data using Mutect2
 data/wgs_illumina_mutect.vcf.gz: data/wgs_illumina.bam ref/hs37d5.fa
