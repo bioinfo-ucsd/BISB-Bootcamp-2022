@@ -3,7 +3,8 @@ threads := 8
 all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
 	data/wes_illumina_mutect.vcf.gz \
 	data/wgs_illumina_manta.vcf.gz data/wgs_pacbio_sniffles.vcf.gz data/wgs_ont_sniffles.vcf.gz \
-	ref/funcotator_dataSources
+	ref/funcotator_dataSources \
+	data/wgs_illumina_R1.fastqc.html data/wgs_illumina_R2.fastqc.html data/wgs_ont.fastqc.html data/wgs_pacbio.fastqc.html 
 
 data ref tmp: 
 	mkdir -p $@
@@ -59,7 +60,7 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 	picard FilterSamReads -I data/wgs_illumina.bam -O data/wes_illumina.bam --INTERVAL_LIST ref/exome_panel.interval_list --FILTER includePairedIntervals
 	samtools index data/wes_illumina.bam
 
-# make fastq files from subsampling the WGS bam
+# make FASTQ files from the BAMs
 data/%_illumina_R1.fastq.gz data/%_illumina_R2.fastq.gz: data/%_illumina.bam
 	samtools fastq -@ $(threads) -1 data/$*_illumina_R1.fastq.gz -2 data/$*_illumina_R2.fastq.gz -0 /dev/null -s /dev/null -n $<
 	
@@ -72,7 +73,7 @@ data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
 data/%.fastqc.html: data/%.fastq.gz
 	fastqc -t $(threads) -o data $<
 
-# Call tumor variants from illumina data using Mutect2
+# Call variants from illumina data using Mutect2
 data/%_illumina_mutect.vcf.gz: data/%_illumina.bam ref/hs37d5.fa
 	gatk Mutect2 -R ref/hs37d5.fa -I data/$*_illumina.bam -O $@
 
