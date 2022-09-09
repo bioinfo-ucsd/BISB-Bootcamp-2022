@@ -74,8 +74,8 @@ data/%.fastqc.html: data/%.fastq.gz
 	fastqc -t $(threads) -o data $<
 
 # Call variants from illumina data using Mutect2
-data/%_illumina_mutect.vcf.gz: data/%_illumina.bam ref/hs37d5.fa
-	gatk Mutect2 -R ref/hs37d5.fa -I data/$*_illumina.bam -O $@
+data/wes_illumina_mutect.vcf.gz: data/wes_illumina.bam ref/hs37d5.fa
+	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O $@
 
 # Download structural variant calls
 data/wgs_illumina_manta.vcf.gz:
