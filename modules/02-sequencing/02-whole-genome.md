@@ -4,7 +4,14 @@ In this activity, we will analyze whole-genome sequencing data from the [SK-BR-3
 
 We will perform the following steps:
 
-Before beginning ensure you are in the `~/bootcamp-02-sequencing/02-whole-genome` directory
+<!-- TODO: add steps -->
+
+Before beginning ensure you are in the `~/bootcamp-02-sequencing/02-whole-genome` directory and ensure that the `bootcamp` conda environment is activated. You can do this by running the following command:
+
+```bash
+cd ~/bootcamp-02-sequencing/02-whole-genome
+source activate bootcamp
+```
 
 ## 1. Compare read length and read quality between platforms
 
@@ -18,21 +25,18 @@ data/
 └── wgs_pacbio.fastq.gz
 ```
 
-Let's compare the read length and quality between the different platforms. We will use the `fastqc` tool to generate a report for each FASTQ file.
-
-```bash
-fastqc data/*.fastq.gz # use wildcard to provide all files as input
-```
+Let's compare the read length and quality between the different platforms.  To save time, we have already run `fastqc` and saved the reports. You can find the resultant HTML files at `data/wgs*fastqc.html`.
 
 We can use multiqc to generate a single report for all of the FASTQ files.
 
 ```bash
+# TODO: change this to just target FASTQs
 multiqc .
 ```
 
 Take a look at the reports. Which platform has the longest reads? Which platform has the highest quality reads? What advantages/disadvantages do you think these features might have for variant calling?
 
-<!-- TODO: add note about sequencing technology market growth. Link to comparison table -->
+While these three platforms have been the most commmonly used in the last 5-10 years, the sequencing technology market is currently experiencing rapid growth. You can find a comprehensive comparison of current platforms on [Albert Vilella](https://twitter.com/albertvilella?s=21&t=qY5fTbtw_DsgCnpOqBQPdg)'s great [Next-Generation-Sequencing Google Sheet](https://docs.google.com/spreadsheets/d/1GMMfhyLK0-q8XkIo3YxlWaZA5vVMuhU1kg41g4xLkXc/edit?hl=en_GB&hl=en_GB#gid=1569422585).
 
 ## 2. Evaluate alignment quality
 
@@ -50,12 +54,14 @@ Let's take a look at the alignment quality using [`samtools`](http://www.htslib.
 <!-- TODO: explore other samtools options? Use multiqc again here? -->
 
 ```bash
-samtools flagstat data/*.bam # use wildcard to provide all files as input
+# use 8 threads to speed up computation
+samtools flagstat -@ 8 data/wgs_illumina.bam 
+samtools flagstat -@ 8 data/wgs_ont.bam 
+samtools flagstat -@ 8 data/wgs_pacbio.bam 
 ```
 
-We can use jbrowse to visualize the alignments.
-
 <!-- TODO: add interpretation -->
+<!-- TODO: add jbrowse -->
 
 ## 3. Call structural variants (SVs) from long- and short-read alignments
 
