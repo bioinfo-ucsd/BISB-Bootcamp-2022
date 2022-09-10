@@ -60,15 +60,15 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 	picard FilterSamReads -I data/wgs_illumina.bam -O data/wes_illumina.bam --INTERVAL_LIST ref/exome_panel.interval_list --FILTER includePairedIntervals
 	samtools index data/wes_illumina.bam
 
-# make FASTQ files from the BAMs
+# make fastq files from subsampling the WGS bam
 data/%_illumina_R1.fastq.gz data/%_illumina_R2.fastq.gz: data/%_illumina.bam
 	samtools fastq -@ $(threads) -1 data/$*_illumina_R1.fastq.gz -2 data/$*_illumina_R2.fastq.gz -0 /dev/null -s /dev/null -n $<
-	
+
 data/wgs_ont.fastq.gz: data/wgs_ont.bam
-	samtools fastq -@ $(threads) data/wgs_ont.bam > data/wgs_ont.fastq.gz
+	samtools sort -@ $(threads) -n $< | samtools fastq -@ $(threads) - | gzip > $@
 
 data/wgs_pacbio.fastq.gz: data/wgs_pacbio.bam
-	samtools fastq -@ $(threads) data/wgs_pacbio.bam > data/wgs_pacbio.fastq.gz
+	samtools sort -@ $(threads) -n $< | samtools fastq -@ $(threads) - | gzip > $@
 
 data/%.fastqc.html: data/%.fastq.gz
 	fastqc -t $(threads) -o data $<
