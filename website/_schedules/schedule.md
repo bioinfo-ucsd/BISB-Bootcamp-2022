@@ -76,7 +76,7 @@ schedule:
         start: "3:00 PM"
         end: "5:00 PM"
         instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
-
+        description: "In this module we will describe the molecular biology foundations of sequencing technologies, from the original sanger method to the current cutting-edge. We will work with sequencing data from the [SK-BR-3 breast cancer cell line](https://www.cellosaurus.org/CVCL_0033) to learn about sequencing data file formats, compare data from different technologies, and search for cancer mutations."
   - name: Tuesday
     date: '2022-09-13'
     events:
