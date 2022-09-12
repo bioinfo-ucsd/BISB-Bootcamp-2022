@@ -43,6 +43,7 @@ schedule:
         start: "9:00 AM"
         end: "9:30 AM"
         instructors: ["Terry Gaasterland, *BISB Program Chair*", "Lucila Ohno-Machado, *BMI Program Chair*"]
+        description: "Welcome to the BISB/BMI graduate program! Our program directors will provide an overview of the graduate program and the two tracks, Bioinformatics and Systems Biology (BISB) and Biomedical Informatics (BMI)."
       - name: BISB Graduate Program Overview
         type: program
         start: "9:30 AM"
@@ -104,6 +105,7 @@ schedule:
         start: '11:15 AM'
         end: '12:00 PM'
         instructors: ["Arya Massarat, *Guest Instructor*"]
+        description: "A genome-wide association study (GWAS) investigates the genetic determinants of a disease or trait by comparing the genomes of a thousands of people. This module exposes the statistics behind a GWAS as well as some resulting challenges. Along the way, it will introduce key concepts and plots relevant to a broad set of computational analyses in genetics."
       - name: Lunch
         type: break
         start: '12:00 PM'
