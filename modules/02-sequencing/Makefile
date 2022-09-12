@@ -1,4 +1,4 @@
-threads := 8
+threads := 7 # adjust this to your liking
 
 all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wes_illumina_R1.fastq.gz data/wes_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
 	data/wes_illumina_mutect.funcotated.vcf \
@@ -71,7 +71,7 @@ data/%.fastqc.html: data/%.fastq.gz
 
 # Call variants from illumina data using Mutect2
 data/wes_illumina_mutect.vcf.gz: data/wes_illumina.bam ref/hs37d5.fa
-	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O $@
+	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O $@ --native-pair-hmm-threads $(threads)
 
 # download funcotator data sources
 ref/funcotator_dataSources: ref
@@ -90,7 +90,7 @@ data/wes_illumina_mutect.funcotated.vcf: data/wes_illumina_mutect.vcf.gz ref/fun
 
 # Download structural variant calls
 data/wgs_illumina_manta.vcf.gz:
-	wget -O- -q --show-progress https://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam.manta_noalt.vcf.gz > $@
+	wget -O- -q --show-progress https://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/SKBR3_550bp_pcrFREE_S1_L001_AND_L002_R1_001.101bp.bwamem.ill.mapped.sort.bam.manta_noalt.vcf.gz | gzip -dc | bgzip -c > $@
 
 data/wgs_pacbio_sniffles.vcf.gz:
 	wget -O- -q --show-progress https://labshare.cshl.edu/shares/schatzlab/www-data/skbr3/bcorganoid/SKBR3_PACBIO_sniffles.vcf | gzip -c > $@
