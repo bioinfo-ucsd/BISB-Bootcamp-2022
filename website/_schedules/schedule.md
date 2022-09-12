@@ -91,12 +91,13 @@ schedule:
         start: '9:00 AM'
         end: '10:00 AM'
         instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Clarence Mah, *Guest Instructor* (Choosing a PhD Advisor)"]
-      - name: "Intro to Statistics"
-        fullname: "Module 3: Introduction to Statistical Methods for Bioinformatics"
+      - name: "Pragmatic Statistics"
+        fullname: "Module 3: Pragmatic Statistics for Modern Biology"
         type: mod
         start: '10:00 AM'
         end: '11:00 AM'
-        instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Gibs Rahman, *Guest Instructor*"]
+        instructors: ["Gibs Rahman, *Guest Instructor*", "Mike Cuoco, *Bootcamp Instructor*"]
+        description: "In this module we will introduce you to regression analysis and its applications in biology, including multiple regression, generalized linear models, and mixed effects models. We will also toucch upon the multiple testing problem, regularization, and bayesian vs frequentist statistics."
       - name: "Preview: GWAS"
         fullname: "Preview: Genome-Wide Association Studies (GWAS)"
         type: mod
