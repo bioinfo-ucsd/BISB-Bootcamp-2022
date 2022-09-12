@@ -1,10 +1,9 @@
 threads := 8
 
-all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
-	data/wes_illumina_mutect.vcf.gz \
+all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wes_illumina_R1.fastq.gz data/wes_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
+	data/wes_illumina_mutect.funcotated.vcf \
 	data/wgs_illumina_manta.vcf.gz data/wgs_pacbio_sniffles.vcf.gz data/wgs_ont_sniffles.vcf.gz \
-	ref/funcotator_dataSources \
-	data/wgs_illumina_R1.fastqc.html data/wgs_illumina_R2.fastqc.html data/wgs_ont.fastqc.html data/wgs_pacbio.fastqc.html 
+	data/wes_illumina_R1.fastqc.html data/wes_illumina_R2.fastqc.html data/wgs_illumina_R1.fastqc.html data/wgs_illumina_R2.fastqc.html data/wgs_ont.fastqc.html data/wgs_pacbio.fastqc.html 
 
 data ref tmp: 
 	mkdir -p $@
@@ -12,13 +11,10 @@ data ref tmp:
 
 # download reference genome
 ref/hs37d5.fa ref/hs37d5.fa.fai ref/hs37d5.dict: ref
-	-wget -O- -q --show-progress http://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz | gzip -dc > ref/hs37d5.fa.gz 2> /dev/null
+	-wget -O- -q --show-progress http://ftp.ncbi.nlm.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz | gzip -dc > ref/hs37d5.fa 2> /dev/null
 	samtools faidx ref/hs37d5.fa
 	picard CreateSequenceDictionary -R ref/hs37d5.fa -O ref/hs37d5.dict
 	sleep 2
-
-ref/funcotator_dataSources: ref
-	wget -O- -q --show-progress https://data.broadinstitute.org/funcotator/datasources/funcotator_dataSources.v1.7.20200521s.tar.gz | tar -xz -C ref/funcotator_dataSources
 
 # download SK-BR-3 RNA-seq bam files from AWS bucket (https://aws.amazon.com/marketplace/pp/prodview-4wmr6pg5beutw)
 data/rna_seq.bam data/rna_seq.bam.bai: data tmp
@@ -62,7 +58,7 @@ data/wes_illumina.bam data/wes_illumina.bam.bai: ref/hs37d5.fa ref/hs37d5.dict d
 
 # make fastq files from subsampling the WGS bam
 data/%_illumina_R1.fastq.gz data/%_illumina_R2.fastq.gz: data/%_illumina.bam
-	samtools fastq -@ $(threads) -1 data/$*_illumina_R1.fastq.gz -2 data/$*_illumina_R2.fastq.gz -0 /dev/null -s /dev/null -n $<
+	samtools sort -@ $(threads) -n $< | samtools fastq -@ $(threads) -1 data/$*_illumina_R1.fastq.gz -2 data/$*_illumina_R2.fastq.gz -0 /dev/null -s /dev/null -n -
 
 data/wgs_ont.fastq.gz: data/wgs_ont.bam
 	samtools sort -@ $(threads) -n $< | samtools fastq -@ $(threads) - | gzip > $@
@@ -76,6 +72,21 @@ data/%.fastqc.html: data/%.fastq.gz
 # Call variants from illumina data using Mutect2
 data/wes_illumina_mutect.vcf.gz: data/wes_illumina.bam ref/hs37d5.fa
 	gatk Mutect2 -R ref/hs37d5.fa -I data/wes_illumina.bam -O $@
+
+# download funcotator data sources
+ref/funcotator_dataSources: ref
+	wget -O- -q --show-progress https://storage.googleapis.com/broad-public-datasets/funcotator/funcotator_dataSources.v1.7.20200521s.tar.gz | tar zxf -
+	mv funcotator_dataSources.v1.7.20200521s $@
+
+# annotate variants with Funcotator
+data/wes_illumina_mutect.funcotated.vcf: data/wes_illumina_mutect.vcf.gz ref/funcotator_dataSources
+	gatk Funcotator \
+		--variant data/wes_illumina_mutect.vcf.gz \
+		--reference ref/hs37d5.fa \
+		--ref-version hg19 \
+		--data-sources-path ref/funcotator_dataSources \
+		--output $@ \
+		--output-file-format VCF
 
 # Download structural variant calls
 data/wgs_illumina_manta.vcf.gz:
