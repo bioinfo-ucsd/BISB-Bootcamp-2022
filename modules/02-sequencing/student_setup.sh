@@ -5,11 +5,6 @@
 # exit if any non-zero, exit if undefined var
 set -euo pipefail
 
-if ! command -v jbrowse &> /dev/nulll; then
-	echo "jbrowse could not be found, please activate the bootcamp conda environment"
-	exit
-fi
-
 cd $HOME
 source_dir=$(dirname "$0")
 dest_dir="$HOME/bootcamp-02-sequencing"
