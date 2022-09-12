@@ -176,6 +176,7 @@ seminars:
     website: https://palmerlab.org
 - date: "2022-09-08"
   flyer: 09-08-2022_flyer.png
+  recording: https://drive.google.com/file/d/1v2JDRQMfuQ4vozr60XmPPIt7c2QQAyvk/view?usp=sharing
   talks:
   - speaker: Vikas Bansal, PhD
     speaker_title: Associate Professor, Division of Genome Information Sciences (Pediatrics), School of Medicine
