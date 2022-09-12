@@ -1,2 +1,5 @@
+modules/02-sequencing/data
+modules/02-sequencing/ref
+modules/02-sequencing/tmp
 **/*.h5ad
 **/*.ipynb_checkpoints
