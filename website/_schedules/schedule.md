@@ -86,12 +86,13 @@ schedule:
         start: '8:30 AM'
         end: '9:00 AM'
       - name: "International Info / Choosing an Advisor"
-        fullname: "Breakout: International Student Info Session / Choosing a PhD Advisor"
+        fullname: "Breakout: International Student Info / Choosing a PhD Advisor"
         type: other
         location: MET 141 (International Student Info); MET 145 (Choosing a PhD Advisor)
         start: '9:00 AM'
         end: '10:00 AM'
         instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Clarence Mah, *Guest Instructor* (Choosing a PhD Advisor)"]
+        description: "**International Studnet Info**: This section will cover a brief introduction of the first things that international students have to deal with once they arrive in the US, and important points to consider in the BISB program. Also how to connect with other international students on campus! <br> **Choosing a PhD Advisor**: [Description coming soon]"
       - name: "Pragmatic Statistics"
         fullname: "Module 3: Pragmatic Statistics for Modern Biology"
         type: mod
