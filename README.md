@@ -7,7 +7,7 @@ This repo is structured as follows:
 ```bash
 .
 ├── README.md # this file
-├── docs # course website
+├── website # course website
 └── modules # materials for each module
 ```
 
