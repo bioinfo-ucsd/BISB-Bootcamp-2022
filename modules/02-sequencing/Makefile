@@ -1,4 +1,4 @@
-threads := 7 # adjust this to your liking
+threads := 8 # adjust this to your liking
 
 all: data/wgs_illumina_R1.fastq.gz data/wgs_illumina_R2.fastq.gz data/wes_illumina_R1.fastq.gz data/wes_illumina_R2.fastq.gz data/wgs_ont.fastq.gz data/wgs_pacbio.fastq.gz \
 	data/wes_illumina_mutect.funcotated.vcf \

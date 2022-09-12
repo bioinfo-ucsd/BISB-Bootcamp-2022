@@ -1,7 +1,5 @@
 # Module 2: Introduction to Sequencing
 
-<!-- TODO: copy this content into first slide -->
-
 To get started run the setup script from your home directory:
 
 ```bash
@@ -13,9 +11,5 @@ This will create a directory called `bootcamp-02-sequencing` in your home direct
 ```bash
 bootcamp-02-sequencing
 ├── 01-whole-exome # activity 1
-├── 02-whole-genome # activity 2
-├── 03-rna-seq # activity 3
-├── jbrowse2 # jbrowse2 installation 
+└── 02-whole-genome # activity 2
 ```
-
-<!-- TODO: add jbrowse startup -->
