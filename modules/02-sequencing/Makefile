@@ -79,7 +79,7 @@ ref/funcotator_dataSources: ref
 	mv funcotator_dataSources.v1.7.20200521s $@
 
 # annotate variants with Funcotator
-data/wes_illumina_mutect.funcotated.vcf: data/wes_illumina_mutect.vcf.gz ref/funcotator_dataSources
+data/wes_illumina_mutect.funcotated.vcf: data/wes_illumina_mutect.vcf.gz ref/funcotator_dataSources ref/hs37d5.fa
 	gatk Funcotator \
 		--variant data/wes_illumina_mutect.vcf.gz \
 		--reference ref/hs37d5.fa \
