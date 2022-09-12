@@ -1,0 +1,14 @@
+name: bootcamp_local
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - ca-certificates
+  - certifi
+  - openssl
+  - r-dplyr
+  - notebook
+  - nb_conda_kernels
+  - r-irkernel
+prefix: /Users/joycebaghdassarian/opt/anaconda3/envs/bootcamp_local

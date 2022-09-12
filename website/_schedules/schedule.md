@@ -67,19 +67,13 @@ schedule:
       - name: "Enjoying San Diego" 
         type: other
         fullname: "Enjoying San Diego: The BISB Guide to San Diego Sights, Eats, and Drinks"
-        start: "2:00 PM"
-        end: "2:30 PM"
+        start: "2:15 PM"
+        end: "2:45 PM"
         instructors: "Lauryn Bruce, *Bootcamp Instructor*"
-      - name: "Sequencing Technologies (Lecture)"
-        fullname: "Module 2A: Introduction to Sequencing Technologies (Lecture)"
+      - name: "Introduction to Next-Generation Sequencing"
+        fullname: "Module 2: Introduction to Next-Generation Sequencing"
         type: mod
-        start: "2:45 PM"
-        end: "3:30 PM"
-        instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
-      - name: "Sequencing Data Analysis (Workshop)"
-        fullname: "Module 2B: Introduction to Sequencing Data Analysis (Workshop)"
-        type: mod
-        start: "3:45 PM"
+        start: "3:00 PM"
         end: "5:00 PM"
         instructors: ["Mike Cuoco, *Bootcamp Instructor*", "Lauryn Bruce, *Bootcamp Instructor*"]
 
@@ -161,7 +155,7 @@ schedule:
         fullname: "Getting Paid 1: Predoctoral Fellowships"
         start: '2:45 PM'
         end: '3:45 PM'
-        instructors: "Mike Cuoco, *Bootcamp Instructor*"
+        instructors: "Hannah Carter, *Guest Instructor*, Associate Professor, Department of Medicine"
       - name: "Predoctoral Internships"
         type: other
         fullname: "Getting Paid 2: Predoctoral Internships"
