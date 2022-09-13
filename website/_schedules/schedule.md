@@ -92,7 +92,7 @@ schedule:
         start: '9:00 AM'
         end: '10:00 AM'
         instructors: ["Erick Armingol, *Guest Instructor* (International Student Info)", "Clarence Mah, *Guest Instructor* (Choosing a PhD Advisor)"]
-        description: "**International Studnet Info**: This section will cover a brief introduction of the first things that international students have to deal with once they arrive in the US, and important points to consider in the BISB program. Also how to connect with other international students on campus! <br> **Choosing a PhD Advisor**: [Description coming soon]"
+        description: "**International Studnet Info**: This section will cover a brief introduction of the first things that international students have to deal with once they arrive in the US, and important points to consider in the BISB program. Also how to connect with other international students on campus! <br> **Choosing a PhD Advisor**: What should you consider when deciding on a lab beyond your research interests? Here are tips and questions to ask when identifying your new home for the next few years."
       - name: "Pragmatic Statistics"
         fullname: "Module 3: Pragmatic Statistics for Modern Biology"
         type: mod
